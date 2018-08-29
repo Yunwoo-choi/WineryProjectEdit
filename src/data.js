@@ -5,7 +5,7 @@ const Data = [
         "address": "32720 Rancho California Rd, Temecula, CA 92591",
         "redWines": [
             {
-                "name": "Owner\'s Private Reserve",
+                "name": "Owner's Private Reserve",
                 "price": 175.00,
                 "type": "Blend",
                 "vintage": 2012,
@@ -28,7 +28,7 @@ const Data = [
             },
 
             {
-                "name": "Winemaker\'s Reserve Callipe Red",
+                "name": "Winemaker's Reserve Callipe Red",
                 "price": 48.00,
                 "type": "Calliope Red",
                 "vintage": 2015,
@@ -36,7 +36,7 @@ const Data = [
             },
 
             {
-                "name": "Winemaker\'s Reserve Profonde",
+                "name": "Winemaker's Reserve Profonde",
                 "price": 65.00,
                 "type": "Cabernet Sauvignon",
                 "vintage": 2014,
@@ -95,7 +95,7 @@ const Data = [
         ],
         "whiteWines": [
             {
-                "name": "Winmaker\'s Reserve Chardonnay",
+                "name": "Winmaker's Reserve Chardonnay",
                 "price": 35.00,
                 "type": "Chardonnay",
                 "vintage": 2016,

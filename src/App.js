@@ -4,6 +4,8 @@ import Login from './components/loginPage/loginPage';
 import Wineries from './components/wineryPage/winery-page';
 import WineListings from './components/wineListPage/wineList-page';
 import UserPage from './components/userPage/user-page';
+import Data from './data'
+
 
 class App extends Component {
 
@@ -29,7 +31,8 @@ class App extends Component {
       }
     ],
     loginUsers: [],
-    pageChanger: "Login Page"
+    pageChanger: "Wine Listing Page",
+    Data: Data
   }
 
   addToUsers = user => {
@@ -72,6 +75,7 @@ class App extends Component {
       case "Wine Listing Page":
         return (
           <WineListings
+          wines = {[...this.state.Data[0].redWines, ...this.state.Data[0].whiteWines, ...this.state.Data[0]["Sweet Wine"], ...this.state.Data[0]["Rosé Wines"]]}
           />
         )
       case "User Page":
