@@ -1,9 +1,40 @@
-body {
 
+.Wineries-Database-Header {
+  font-family: "Zapfino";
+  margin-top: 40px;
+  color: #34908d;
+  text-align: center;
+}
+
+.ornament {
+  font-family: "Bodoni Ornaments";
+}
+.together {
+  display: inline;
+}
+.Wineries-Database-container {
+  font-family: "FoglihtenNo07calt";
+  height: 200px;
+  color: white;
+  text-align: justify;
+  background-image: url(./components/pictures/header2.jpg);
+  margin-bottom: 20px;
+}
+
+.margin-control {
+  margin-right: 40px;
+}
+.colorPick {
+  background-color: #836953;
+}
+.fontSize {
+  font-size: 40px;
+}
+.verticalAlign {
+  padding-top: 50px;
 }
 .header {
-  font-family: "Snell Roundhand";
-  color: #3A539B;
+  height: 100%;
 }
 
 .form-left {
@@ -87,3 +118,21 @@ hr {
   border-style: inset;
   border-width: 1px;
 } 
+
+.filterDropDown {
+  width: 100%;
+  padding: 100px, 100px;
+  margin: 20px 50px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  align-items: center;
+  
+}
+#wineryList {
+  width: 100%;
+  border: 5px solid black;
+}

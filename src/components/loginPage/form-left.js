@@ -39,25 +39,6 @@ class FormLeft extends Component {
         ;
     }
 
-    // searchPerson = event => {
-    //   event.preventDefault();
-    //   console.log("Are you working?")
-    //   let people = this.state.people;
-    //   for (let i = 0; i <people.length-1 ; i++) {
-    //     if (people[i].name===event) {
-    //       var index = i;
-    //       console.log(index);
-    //     }else {
-    //       console.log("TEST TEST TEST")
-    //     }
-    //   }
-    //   this.setState({
-    //     selected: index,
-    //     showMoves: 1
-    //   })
-
-    // }
-
 
     render() {
         let visibilityStyle3 = this.state.visibility3 ? {visibility: 'hidden'} : {visibility: ""};

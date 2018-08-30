@@ -1,18 +1,16 @@
 import React from 'react';
 import FormRight from './form-right';
 import FormLeft from './form-left';
-
 const Login = props => {
     return (
 
         <div className='container'>
             <div>
                 <header className="Wineries-Database-Header">
-                <h1 className = "header text-center font-weight-bold">Winery Pickery</h1>
-                <h2 className = "header text-center font-weight-bold">Pick a Winery to match your Specific Tastes!</h2>
+                <h1 className = " together ornament"> e </h1>
+                <h1 className = "header together text-center font-weight-bold">Winery Pickery</h1>
                 </header>
             </div>
-
 
             <div className="row forms-div">
 

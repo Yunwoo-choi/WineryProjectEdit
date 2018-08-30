@@ -8,16 +8,17 @@ import Data from './data'
 import logo from './logo.jpg'
 
 var backgroundImageStyle = {
-  backgroundImage: `url(${logo})`, 
+  backgroundImage: `url(${logo})`,
   position: 'absolute',
-   top: '0',
-   right: '0',
-   bottom: '0',
-   left: '0'
+  top: '0',
+  right: '0',
+  bottom: '0',
+  left: '0'
 }
 
+
 var noBackgroundImageStyle = {
-  
+
 }
 
 
@@ -47,7 +48,9 @@ class App extends Component {
     loginUsers: [],
     pageChanger: "Wine Listing Page",
     Data: Data,
-    backgroundIndicator: false
+    backgroundIndicator: false,
+    userPreference: [], 
+    chooseWinery: 0
   }
 
   addToUsers = user => {
@@ -57,12 +60,19 @@ class App extends Component {
     });
   }
 
-  changeBackgroundImage = e => {
-    this.setState ({
-      backgroundIndicator: e
-  })
+  wineryChose = user => {
+    let newWineryChosen = user;
+    this.setState({
+      chooseWinery: newWineryChosen
+    })
   }
-  
+
+  changeBackgroundImage = e => {
+    this.setState({
+      backgroundIndicator: e
+    })
+  }
+
   changePage = indicator => {
     let newPageChanger = indicator
     this.setState({
@@ -77,6 +87,24 @@ class App extends Component {
     });
   }
 
+  userPreferenceSelection = user => {
+    let newUserPreference = [...this.state.userPreference, user]
+    this.setState({
+      userPreference: newUserPreference
+    })
+  }
+
+  wineryPicked = index => {
+    let wines = [];
+    let winery = this.state.Data[index];
+    for (var x in winery) {
+      if (winery[x].constructor === Array) {
+        wines = [...wines, ...winery[x]]
+      }
+    }
+    return wines;
+  }
+
 
   pageIndication = () => {
     switch (this.state.pageChanger) {
@@ -87,18 +115,23 @@ class App extends Component {
             loginUser={this.usersLogIn}
             userVerify={this.state.users}
             pageChanger={this.changePage}
-            backgroundChanger = {this.changeBackgroundImage}
+            backgroundChanger={this.changeBackgroundImage}
           />
         )
       case "Winery Page":
         return (
           <Wineries
+          wineryList = {this.state.Data}
+          wineryChosen = {this.wineryChosen}
+          changePage={this.changePage}
           />
         )
       case "Wine Listing Page":
         return (
           <WineListings
-          wines = {[...this.state.Data[0].redWines, ...this.state.Data[0].whiteWines, ...this.state.Data[0]["Sweet Wine"], ...this.state.Data[0]["Rosé Wines"]]}
+            wines={this.wineryPicked(0)}
+            userPreferenceSelection={this.userPreferenceSelection}
+            changePage={this.changePage}
           />
         )
       case "User Page":
@@ -106,7 +139,7 @@ class App extends Component {
           <UserPage
           />
         )
-        default:
+      default:
         break;
     }
   }
@@ -116,7 +149,7 @@ class App extends Component {
   render() {
     let backgroundImageChange = this.state.backgroundIndicator ? backgroundImageStyle : noBackgroundImageStyle
     return (
-      <div style = {backgroundImageChange}>
+      <div style={backgroundImageChange}>
         {this.pageIndication()}
       </div>
     );

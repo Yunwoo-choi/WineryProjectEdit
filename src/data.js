@@ -5,7 +5,7 @@ const Data = [
         "address": "32720 Rancho California Rd, Temecula, CA 92591",
         "redWines": [
             {
-                "name": "Owner's Private Reserve",
+                "name": "Owner\'s Private Reserve",
                 "price": 175.00,
                 "type": "Blend",
                 "vintage": 2012,
@@ -95,7 +95,7 @@ const Data = [
         ],
         "whiteWines": [
             {
-                "name": "Winmaker's Reserve Chardonnay",
+                "name": "Winmaker\'s Reserve Chardonnay",
                 "price": 35.00,
                 "type": "Chardonnay",
                 "vintage": 2016,
@@ -211,7 +211,7 @@ const Data = [
     },
 
     {
-        "name": "Hart",
+        "name": "Hart Winery",
         "location": "Temecula",
         "address": "41300 Ave Biona, Temecula, CA 92591",
         "redWines": [
@@ -438,14 +438,14 @@ const Data = [
             },
             {
                 "name": "Nebbiolo",
-                "price": 52.00,
+                "price": 49.00,
                 "type": "Blend",
                 "vintage": 2014,
                 "special notes": "Black cherry, barrel spices, earthy note. Fruit-driven entry, rich palate and long, seamless finish."
             },
             {
                 "name": "Estate Syrah",
-                "price": 52.00,
+                "price": 48.00,
                 "type": "Syrah",
                 "vintage": 2013,
                 "special notes": "It has a combination of gamy, earthy aromas along with blueberry and spicy character."
@@ -462,7 +462,7 @@ const Data = [
                 },
             {
                 "name": "Vermeninto" ,
-                "price": 26.00,
+                "price": 25.00,
                 "type": "Chardonnay",
                 "vintage": 2016,
                 "special notes": "Integrated lemon-citrus notes with minerality, richer than you’d expect, seamless, balanced finish."        
@@ -497,70 +497,171 @@ const Data = [
                 "special notes": "This icon of our sparkling wines shows delicate apple and toasted yeast aromas in the nose brought out by the finest of fine bubbles in the glass."
                 }
         ],
-            "minPrice": 26.00,
-            "maxPrice": 52.00
+            "minPrice": 25.00,
+            "maxPrice": 49.00
 },
 
 
 
+    {
+            "name": "Oak Mountain Winery",
+                "location": "Temecula",
+                    "address": "36522 Via Verde - Temecula, CA 92592",
+                        "redWines": [
+                            {
+                                "name": "Oak Mountain Petite Verdot",
+                                "price": 78.00,
+                                "type": "Verdot",
+                                "vintage": 2008,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Oak Mountain Merlot",
+                                "price": 30.00,
+                                "type": "Merlot",
+                                "vintage": 2012,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Estate Petite Sirah",
+                                "price": 52.00,
+                                "type": "Syrah",
+                                "vintage": 2012,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Estate Cabernet Sauvignon",
+                                "price": 75.00,
+                                "type": "Cabernet Sauvignon",
+                                "vintage": 2013,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Temcula Hills Zinfandel",
+                                "price": 32.00,
+                                "type": "Zinfandel",
+                                "vintage": 2013,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Oak Mountain Malbec",
+                                "price": 45.00,
+                                "type": "Malbec",
+                                "vintage": 2014,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Caveman Red",
+                                "price": 24.00,
+                                "type": "Blend",
+                                "vintage": 2013,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Temecula Mourverde",
+                                "price": 38.00,
+                                "type": "Mourverde",
+                                "vintage": 2012,
+                                "special notes": ""
+                            }
+                        ],
+                            "whiteWines": [
+                                {
+                                    "name": "Muscat",
+                                    "price": 20.00,
+                                    "type": "Muscat",
+                                    "vintage": 2015,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Chardonnay",
+                                    "price": 24.00,
+                                    "type": "Chardonnay",
+                                    "vintage": 2017,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Sauvignon Blanc",
+                                    "price": 24.00,
+                                    "type": "Sauvignon Blanc",
+                                    "vintage": 2017,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Estate Roussanne",
+                                    "price": 24,
+                                    "type": "Roussanne",
+                                    "vintage": 2016,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Estate Viogner",
+                                    "price": 25.00,
+                                    "type": "Vioner",
+                                    "vintage": 2017,
+                                    "special notes": ""
+                                }
+                            ],
+                                "minPrice": 20.00,
+                                    "maxPrice": 78.00
+    },
 
-
-{
-    "name": "Oak Mountain Winery",
-        "location": "Temecula",
-            "address": "36522 Via Verde - Temecula, CA 92592",
+    {
+    "name": "Fess Parker Winery",
+        "location": "Santa Barbara",
+            "address": "6200 Foxen Canyon Road, Los Olivos, CA 93441",
                 "redWines": [
                     {
-                        "name": "Oak Mountain Petite Verdot",
-                        "price": 78,
+                        "name": "Cab",
+                        "price": 125.00,
                         "type": "Verdot",
                         "vintage": 2008,
                         "special notes": ""
                     },
                     {
-                        "name": "Oak Mountain Merlot",
+                        "name": "Merlot",
                         "price": 30.00,
                         "type": "Merlot",
                         "vintage": 2012,
                         "special notes": ""
                     },
                     {
-                        "name": "Estate Petite Sirah",
+                        "name": "Sirah",
                         "price": 52.00,
                         "type": "Syrah",
                         "vintage": 2012,
                         "special notes": ""
                     },
                     {
-                        "name": "Estate Cabernet Sauvignon",
+                        "name": "Cabernet Sauvignon",
                         "price": 75.00,
                         "type": "Cabernet Sauvignon",
                         "vintage": 2013,
                         "special notes": ""
                     },
                     {
-                        "name": "Temcula Hills Zinfandel",
+                        "name": "Zinfandel",
                         "price": 32.00,
                         "type": "Zinfandel",
                         "vintage": 2013,
                         "special notes": ""
                     },
                     {
-                        "name": "Oak Mountain Malbec",
-                        "price": 45.00,
+                        "name": "Malbec",
+                        "price": 25.00,
                         "type": "Malbec",
                         "vintage": 2014,
                         "special notes": ""
                     },
                     {
-                        "name": "Caveman Red",
-                        "price": 24.00,
+                        "name": "Red",
+                        "price": 15.00,
                         "type": "Blend",
                         "vintage": 2013,
                         "special notes": ""
                     },
                     {
-                        "name": "Temecula Mourverde",
+                        "name": "Mourverde",
                         "price": 38.00,
                         "type": "Mourverde",
                         "vintage": 2012,
@@ -577,7 +678,7 @@ const Data = [
                         },
                         {
                             "name": "Chardonnay",
-                            "price": 24.00,
+                            "price": 20.00,
                             "type": "Chardonnay",
                             "vintage": 2017,
                             "special notes": ""
@@ -599,15 +700,222 @@ const Data = [
                         {
                             "name": "Estate Viogner",
                             "price": 25.00,
-                            "type": "Vioner",
+                            "type": "Viogner",
                             "vintage": 2017,
                             "special notes": ""
                         }
                     ],
                         "minPrice": 20.00,
                             "maxPrice": 75.00
-},  
+    }, 
+    
+    {
+        "name": "Bridlewood Estate Winery",
+            "location": "Santa Barbara",
+                "address": "3555 Roblar Ave, Santa Ynez CA 93460",
+                    "redWines": [
+                        {
+                            "name": "Cabernet",
+                            "price": 150.00,
+                            "type": "Cabernet",
+                            "vintage": 2000,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Merlot",
+                            "price": 28.00,
+                            "type": "Merlot",
+                            "vintage": 2010,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Sirah",
+                            "price": 25.00,
+                            "type": "Syrah",
+                            "vintage": 2010,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Cabernet Sauvignon",
+                            "price": 65.00,
+                            "type": "Cabernet Sauvignon",
+                            "vintage": 2002,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Zinfandel",
+                            "price": 52.00,
+                            "type": "Zinfandel",
+                            "vintage": 2003,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Malbec",
+                            "price": 40.00,
+                            "type": "Malbec",
+                            "vintage": 2013,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Red",
+                            "price": 19.00,
+                            "type": "Blend",
+                            "vintage": 2013,
+                            "special notes": ""
+                        },
+                        {
+                            "name": "Mourverde",
+                            "price": 18.00,
+                            "type": "Mourverde",
+                            "vintage": 2012,
+                            "special notes": ""
+                        }
+                    ],
+                        "whiteWines": [
+                            {
+                                "name": "Muscat",
+                                "price": 17.00,
+                                "type": "Muscat",
+                                "vintage": 2015,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Chardonnay",
+                                "price": 16.00,
+                                "type": "Chardonnay",
+                                "vintage": 2017,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Sauvignon Blanc",
+                                "price": 34.00,
+                                "type": "Sauvignon Blanc",
+                                "vintage": 2017,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Estate Roussanne",
+                                "price": 15.00,
+                                "type": "Roussanne",
+                                "vintage": 2016,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Estate Viogner",
+                                "price": 25.00,
+                                "type": "Viogner",
+                                "vintage": 2017,
+                                "special notes": ""
+                            }
+                        ],
+                            "minPrice": 15.00,
+                                "maxPrice": 125.00
+        }, 
+    
+        {
+            "name": "Eberle Winery",
+                "location": "Paso Robles",
+                    "address": "382 CA-46, Paso Robles CA 93460",
+                        "redWines": [
+                            {
+                                "name": "Cabernet",
+                                "price": 88.00,
+                                "type": "Cabernet",
+                                "vintage": 2000,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Merlot",
+                                "price": 22.00,
+                                "type": "Merlot",
+                                "vintage": 2010,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Sirah",
+                                "price": 25.00,
+                                "type": "Syrah",
+                                "vintage": 2010,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Cabernet Sauvignon",
+                                "price": 65.00,
+                                "type": "Cabernet Sauvignon",
+                                "vintage": 2002,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Zinfandel",
+                                "price": 52.00,
+                                "type": "Zinfandel",
+                                "vintage": 2003,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Malbec",
+                                "price": 14.00,
+                                "type": "Malbec",
+                                "vintage": 2013,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Red",
+                                "price": 24.00,
+                                "type": "Blend",
+                                "vintage": 2013,
+                                "special notes": ""
+                            },
+                            {
+                                "name": "Mourverde",
+                                "price": 38.00,
+                                "type": "Mourverde",
+                                "vintage": 2012,
+                                "special notes": ""
+                            }
+                        ],
+                            "whiteWines": [
+                                {
+                                    "name": "Muscat",
+                                    "price": 13.00,
+                                    "type": "Muscat",
+                                    "vintage": 2015,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Chardonnay",
+                                    "price": 14.00,
+                                    "type": "Chardonnay",
+                                    "vintage": 2017,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Sauvignon Blanc",
+                                    "price": 16.00,
+                                    "type": "Sauvignon Blanc",
+                                    "vintage": 2017,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Estate Roussanne",
+                                    "price": 13,
+                                    "type": "Roussanne",
+                                    "vintage": 2016,
+                                    "special notes": ""
+                                },
+                                {
+                                    "name": "Estate Viogner",
+                                    "price": 15.00,
+                                    "type": "Viogner",
+                                    "vintage": 2017,
+                                    "special notes": ""
+                                }
+                            ],
+                                "minPrice": 10.00,
+                                    "maxPrice": 75.00
+            },
 ]
+
 
 
 // {"name": ,
