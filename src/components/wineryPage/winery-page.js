@@ -242,7 +242,7 @@ class Wineries extends React.Component {
             <footer className="page-footer font-small colorPick float-bottom">
                     <div className="footer-copyright text-center py-3">
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Login Page")}>Login Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Wine Listing Page")}>Wine List Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Wine Listing Page")}>Wine List Page OMG</button></p>
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("User Page")}>User Page</button></p>
                     </div>
                 </footer>
