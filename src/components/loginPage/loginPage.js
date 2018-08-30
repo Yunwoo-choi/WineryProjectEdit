@@ -24,7 +24,7 @@ const Login = props => {
                     <FormLeft loginUser={props.loginUser}
                         userVerify = {props.userVerify} 
                         pageChanger = {props.pageChanger}
-                        
+                        backgroundChanger = {props.backgroundChanger}
                     />
                     </div>
                 </div>

@@ -5,7 +5,15 @@ class FormRight extends Component {
         username: '',
         email: '',
         password: '',
-        passwordVerify: ''
+        passwordVerify: '',
+        visibility: true,
+        visibility2: true
+    }
+
+    onVisibilityChange = e => {
+        this.setState ({
+            visibility: e
+        })
     }
 
     onUsernameChange = e => {
@@ -34,30 +42,33 @@ class FormRight extends Component {
 
     formSubmit = e => {
         e.preventDefault();
-        // if (this.state.password === this.state.passwordVerify) {
-        //     e.target.passwordWarning = "hidden";
+        if (this.state.password === this.state.passwordVerify) {
         this.props.addToUsers(this.state);
 
         this.setState({
             username: '',
             email: '',
             password: '',
-            passwordVerify: ''
+            passwordVerify: '',
+            visibility: true,
+            visibility2: false
         });
-        // } else {
-        //     e.target.passwordWarning = "visible";
-
-        //     this.setState({
-        //         username: '',
-        //         email: '',
-        //         password: '',
-        //         passwordVerify: ''
-        //     });
-        // }
+        } else {
+            this.setState({
+                username: '',
+                email: '',
+                password: '',
+                passwordVerify: '',
+                visibility: false,
+                visibility2: true
+            });
+        }
     }
 
 
     render() {
+        let visibilityStyle = this.state.visibility ? {visibility: 'hidden'} : {visibility: ""};
+        let visibilityStyle2 = this.state.visibility2 ? {visibility: 'hidden'} : {visibility: ""};
         return (
             <form onSubmit={this.formSubmit}>
                 <div className="form-group">
@@ -76,7 +87,8 @@ class FormRight extends Component {
                     <label>Confirm Password</label>
                     <input value={this.state.passwordVerify} onChange={this.onPasswordVerifyChange} type="password" className="form-control" placeholder="Verify Your Password" />
                 </div>
-                <p className = "text-danger passwordWarning" >Passwords do not match!</p>
+                <p className = "text-danger" style = {visibilityStyle} >Passwords do not match!</p>
+                <p className = "text-success" style = {visibilityStyle2} >Sign up successful! You may login now!</p>
 
                 <button type="submit" className="btn btn-light float-right mt-5 custom-button">Sign Up!</button>
             </form>

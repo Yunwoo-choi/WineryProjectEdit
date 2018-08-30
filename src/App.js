@@ -5,6 +5,20 @@ import Wineries from './components/wineryPage/winery-page';
 import WineListings from './components/wineListPage/wineList-page';
 import UserPage from './components/userPage/user-page';
 import Data from './data'
+import logo from './logo.jpg'
+
+var backgroundImageStyle = {
+  backgroundImage: `url(${logo})`, 
+  position: 'absolute',
+   top: '0',
+   right: '0',
+   bottom: '0',
+   left: '0'
+}
+
+var noBackgroundImageStyle = {
+  
+}
 
 
 class App extends Component {
@@ -32,7 +46,8 @@ class App extends Component {
     ],
     loginUsers: [],
     pageChanger: "Wine Listing Page",
-    Data: Data
+    Data: Data,
+    backgroundIndicator: false
   }
 
   addToUsers = user => {
@@ -40,6 +55,12 @@ class App extends Component {
     this.setState({
       users: newUsers
     });
+  }
+
+  changeBackgroundImage = e => {
+    this.setState ({
+      backgroundIndicator: e
+  })
   }
   
   changePage = indicator => {
@@ -56,7 +77,8 @@ class App extends Component {
     });
   }
 
-  pageIndication = indicator => {
+
+  pageIndication = () => {
     switch (this.state.pageChanger) {
       case "Login Page":
         return (
@@ -65,6 +87,7 @@ class App extends Component {
             loginUser={this.usersLogIn}
             userVerify={this.state.users}
             pageChanger={this.changePage}
+            backgroundChanger = {this.changeBackgroundImage}
           />
         )
       case "Winery Page":
@@ -91,8 +114,9 @@ class App extends Component {
 
 
   render() {
+    let backgroundImageChange = this.state.backgroundIndicator ? backgroundImageStyle : noBackgroundImageStyle
     return (
-      <div>
+      <div style = {backgroundImageChange}>
         {this.pageIndication()}
       </div>
     );

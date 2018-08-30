@@ -4,8 +4,11 @@ class FormLeft extends Component {
 
     state = {
         userName: '',
-        password: ''
+        password: '',
+        visibility3: true
     }
+
+
     onUserNameChange = e => {
         this.setState({
             userName: e.target.value
@@ -22,14 +25,14 @@ class FormLeft extends Component {
         e.preventDefault();
         for (let i = 0; i < this.props.userVerify.length; i++) {
             if (this.state.userName === this.props.userVerify[i].username && this.state.password === this.props.userVerify[i].password) {
-                console.log("ARE YOU WORKING?!?!?!")
                 this.props.pageChanger("Winery Page")
+                this.props.backgroundChanger(false)
                 break;
             } else {
-                console.log("OMG")
                 this.setState({
                     userName: '',
-                    password: ''
+                    password: '',
+                    visibility3: false
                 })
             }
         }
@@ -57,6 +60,7 @@ class FormLeft extends Component {
 
 
     render() {
+        let visibilityStyle3 = this.state.visibility3 ? {visibility: 'hidden'} : {visibility: ""};
         return (
             <form onSubmit={this.formSubmit}>
                 <div className="form-group custom-form">
@@ -67,7 +71,7 @@ class FormLeft extends Component {
                     <label>Password</label>
                     <input value={this.state.password} onChange={this.onPasswordChange} type="password" className="form-control" placeholder="Enter Your Password" />
                 </div>
-
+                <p className = "text-danger" style = {visibilityStyle3}>Incorrect Username or Password! Please Try Again.</p>
                 <button type="submit" className="btn btn-light float-right mt-5 custom-button">Login!</button>
             </form>
         );
