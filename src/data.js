@@ -688,101 +688,162 @@ const Data = [
         "address": "6200 Foxen Canyon Road, Los Olivos, CA 93441",
         "redWines": [
             {
-                "name": "Cab",
-                "price": 125.00,
-                "type": "Verdot",
-                "vintage": 2008,
-                "special notes": ""
-            },
-            {
-                "name": "Merlot",
-                "price": 30.00,
-                "type": "Merlot",
-                "vintage": 2012,
-                "special notes": ""
-            },
-            {
-                "name": "Sirah",
-                "price": 52.00,
-                "type": "Syrah",
-                "vintage": 2012,
-                "special notes": ""
-            },
-            {
-                "name": "Cabernet Sauvignon",
-                "price": 75.00,
+                "name": "Stagecoach Cabernet sauvignon",
+                "price": 95.00,
                 "type": "Cabernet Sauvignon",
-                "vintage": 2013,
-                "special notes": ""
-            },
-            {
-                "name": "Zinfandel",
-                "price": 32.00,
-                "type": "Zinfandel",
-                "vintage": 2013,
-                "special notes": ""
-            },
-            {
-                "name": "Malbec",
-                "price": 25.00,
-                "type": "Malbec",
                 "vintage": 2014,
-                "special notes": ""
+                "special notes": "Deep garnet-purple colored, the 2014 Stagecoach Vineyard Cabernet Sauvignon offers up pronounced blackberries, black plums and cassis notes with hints of pencils shavings, bay leaves and black soil plus a waft of violets.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/ANV-CabSauv-Stagecoach-AtlasPeak-Btl-2014-web.png"
             },
             {
-                "name": "Red",
-                "price": 15.00,
+                "name": "Skellenger Lane Cabernet Sauvignon",
+                "price": 95.00,
+                "type": "Cabernet Sauvignon",
+                "vintage": 2014,
+                "special notes": "Deep garnet-purple colored, the 2014 Skellenger Lane Cabernet Sauvignon is beautifully scented of cassis, crushed red currants, mulberries and plums over opulent suggestions of sandalwood, Indian spices, Sichuan pepper and cedar chest.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/ANV-CabSauv-SkellengerLn-Rutherford-Btl-2014-web.png"
+            },
+            {
+                "name": "Napa Valley Cabernet Sauvignon",
+                "price": 90.00,
+                "type": "Cabernet Sauvignon",
+                "vintage": 2014,
+                "special notes": "Cabernet Sauvignon reveals a medium to deep garnet-purple color and nose of dusty earth, cloves, cigar boxes and lavender over a core of red and black currants, black cherries and a waft of baker's chocolate.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/ANV-CabSauv-NapaValley-Btl-2014-web.png"
+            },
+            {
+                "name": "Stagecoach Cabernet Sauvignon-Syrah",
+                "price": 80.00,
                 "type": "Blend",
+                "vintage": 2014,
+                "special notes": " Red cherry and vanilla dominate secondary elements of cedar, leather and cola, finishing with a length of clove.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/ANV-CabSyrah-Stagecoach-AtlasPeak-Btl-2014-web.png"
+            },
+            {
+                "name": "Elite Syrah",
+                "price": 65.00,
+                "type": "Syrah",
                 "vintage": 2013,
-                "special notes": ""
+                "special notes": "The wine is a deep, opaque purple in the glass and the nose is of red stone fruit and berry, namely Black Cherry, Boysen and Blackberry. ",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/EWC-Elite-SBC-bottle-web1111.png"
             },
             {
-                "name": "Mourverde",
-                "price": 38.00,
-                "type": "Mourverde",
-                "vintage": 2012,
-                "special notes": ""
-            }
-        ],
-        "whiteWines": [
-            {
-                "name": "Muscat",
-                "price": 20.00,
-                "type": "Muscat",
+                "name": "Sanford & Benedict Pinot Noir",
+                "price": 60.00,
+                "type": "Pinot Noir",
                 "vintage": 2015,
-                "special notes": ""
+                "special notes": "Intensely dark and focused, this bottling from Santa Barbara County’s historic vineyard is unrivaled in intensity, showing mulberry, elderberry, crushed rock, roast beef and a hint of sagebrush.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-PinotNoir-SB-2015-bottle-web1.png"
             },
             {
-                "name": "Chardonnay",
-                "price": 20.00,
-                "type": "Chardonnay",
-                "vintage": 2017,
-                "special notes": ""
+                "name": "Clone 115 Pinot Noir",
+                "price": 58.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "Fresh and easy aromas of raspberry, plum candy, dark rose petals, boysenberry and allspice show on the nose of this clonal study.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-PinotNoir-C115-2015-bottle-web11.png"
             },
             {
-                "name": "Sauvignon Blanc",
-                "price": 24.00,
-                "type": "Sauvignon Blanc",
-                "vintage": 2017,
-                "special notes": ""
+                "name": "Parker West Pinot Noir",
+                "price": 58.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "It shows dense dried fruit and turned earth aromas, along with chaparral, smoke, clove and nutmeg.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-PinotNoir-PWV-2015-bottle-web1.png"
             },
             {
-                "name": "Estate Roussanne",
-                "price": 24,
-                "type": "Roussanne",
+                "name": "Pommard Clone Pinot Noir",
+                "price": 58.00,
+                "type": "Pinot Noir",
                 "vintage": 2016,
-                "special notes": ""
+                "special notes": "The Pommard Clone is a darker, more brooding example of Pinot Noir. You will find black cherry, baking spices and even slightly smokey notes on the nose.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-PinotNoir-PC-2016-bottle-web-EIGLVH.png"
             },
             {
-                "name": "Estate Viogner",
-                "price": 25.00,
-                "type": "Viogner",
-                "vintage": 2017,
-                "special notes": ""
+                "name": "Fiddlestix Pinot Noir",
+                "price": 58.00,
+                "type": "Pinot Noir",
+                "vintage": 2016,
+                "special notes": "The Fiddlestix Pinot Noir shows spicy arromatics, vibrant acidity and notes of smoke, black cherry and cola.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-PinotNoir-FV-2016-bottle-web.png"
+            },
+            {
+                "name": "Ashley's Pinot Noir",
+                "price": 58.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "Pale to medium ruby-purple colored...has pretty violets and red rose notes over a core of cranberries and pomegranate plus touches of bay leaves and mossy bark.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-PinotNoir-Ashleys-2015-bottle-web1.png"
+            },
+            {
+                "name": "Rodney's Vineyard Syrah",
+                "price": 54.00,
+                "type": "Syrah",
+                "vintage": 2015,
+                "special notes": "This Syrah is a rich, complex, full-bodied wine exhibiting layers of berry, cherry, cassis, clove, spice, earth, toast and smoke flavors.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/FPW-Syrah-RV-2015-bottle-web11.png"
+            },
+            {
+                "name": "Bien Nacido Vineyard Syrah",
+                "price": 49.00,
+                "type": "Syrah",
+                "vintage": 2014,
+                "special notes": "Black fruits, pepper, gamey meats and a kiss of olive all emerge from this seamless, silky, beautifully concentrated and textured 2014 that just screams Bien Nacido Syrah!",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/thumbnails/EWC-Syrah-BNV-2014-bottle-web.png"
+            },
+            {
+                "name": "Revelation",
+                "price": 49.00,
+                "type": "Blend",
+                "vintage": 2015,
+                "special notes": "Its time spent in barrel adds layers of toasty oak to the nose combined with dark fruit notes of blueberry, black cherry and boysenberry and hints of cinnamon and sage spices.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/EWC-Revelation-RV-2015-bottle-web.png"
+            },
+            {
+                "name": "Big Easy ",
+                "price": 35.00,
+                "type": "Blend",
+                "vintage": 2016,
+                "special notes": "This well-structured blend has the same characteristics you have come to expect from The Big Easy, rich dark fruit flavors with a touch of oak, and soft tannins that lead to a long lengthy finish. ",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/FPW-TheBigEasy-SBC-bottle-web-YBRMUG.png"
             }
         ],
-        "minPrice": 20.00,
-        "maxPrice": 75.00
+        "Rosé Wines": [
+            {
+                "name": "Sta. Rita Hills Pinot Rose ",
+                "price": 25.00,
+                "type": "Pinot Rose",
+                "vintage": 2017,
+                "special notes": "Fresh aromas of rose petal, guava, ginger, cherry and wild strawberry cannot be contained within the glass while you can't miss flavors of watermelon, cranberry, Bing cherry, passion fruit and blood orange on the palate.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/FPW-PinotNoirRose-SRH-2017-bottle-web.png"
+            },
+            {
+                "name": "Fesstivity Brut Rose ",
+                "price": 45.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "Very pale salmon-pink in color, the 2015 Brut Rosé displays notions of dried roses, Bing cherries and raspberry leaves with suggestions of honeyed toast and chalk dust.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/Fesstivity-BR-2015-bottle-web11.png"
+            },
+            {
+                "name": "Fesstivity Blanc De Noirs ",
+                "price": 49.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "The delicate, persistent bubbles and golden straw color with a hint of salmon are harbingers of great things to come. You will detect hints of red apple, strawberry and brioche on the nose.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/Fesstivity-BDN-2015-bottle-print1.png"
+            },
+            {
+                "name": "Grenache Rose ",
+                "price": 25.00,
+                "type": "Grenache",
+                "vintage": 2017,
+                "special notes": "This refreshing rosé possesses beautiful aromatics of guava, watermelon, passion fruit, papaya and cherry, an enticing vibrant light pink color and crisp fruit flavors of cherry, cranberry, guava, watermelon and strawberry with a touch of rose water.",
+                "image": "https://www.fessparkerwineshop.com/assets/images/products/pictures/EWC-GrenacheRose-SBC-2017-bottle-web.png"
+            }
+        ],
+        "minPrice": 25.00,
+        "maxPrice": 95.00
     },
 
     {
@@ -791,101 +852,124 @@ const Data = [
         "address": "3555 Roblar Ave, Santa Ynez CA 93460",
         "redWines": [
             {
-                "name": "Cabernet",
-                "price": 150.00,
-                "type": "Cabernet",
-                "vintage": 2000,
-                "special notes": ""
+                "name": "Chardonnay",
+                "price": 18.00,
+                "type": "Chardonnay",
+                "vintage": 2016,
+                "special notes": "Our Bridlewood Monterey County Chardonnay offers juicy tropical fruit and floral notes with hints of vanilla and spice. Flavors of baked apple, lemon and white peach are accentuated by touches of spice and honey.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/chardonnay_1.jpg?ZdsAmBKoKFVO.s7494LFTpILToK5cIW9"
             },
             {
-                "name": "Merlot",
-                "price": 28.00,
-                "type": "Merlot",
-                "vintage": 2010,
-                "special notes": ""
-            },
-            {
-                "name": "Sirah",
-                "price": 25.00,
-                "type": "Syrah",
-                "vintage": 2010,
-                "special notes": ""
+                "name": "Pinot Noir",
+                "price": 18.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "Our Bridlewood Monterey County Pinot Noir opens with aromas of dark berry, caramel and vanilla. The palate is an elegant expression of Monterey County, offering notes of raspberry, black cherry and subtle oak notes.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/pinot-noir.jpg?T5pxDpO96juIgL.YNTKsxshCAYyiYX.p"
             },
             {
                 "name": "Cabernet Sauvignon",
-                "price": 65.00,
-                "type": "Cabernet Sauvignon",
-                "vintage": 2002,
-                "special notes": ""
-            },
-            {
-                "name": "Zinfandel",
-                "price": 52.00,
-                "type": "Zinfandel",
-                "vintage": 2003,
-                "special notes": ""
-            },
-            {
-                "name": "Malbec",
-                "price": 40.00,
-                "type": "Malbec",
-                "vintage": 2013,
-                "special notes": ""
-            },
-            {
-                "name": "Red",
-                "price": 19.00,
-                "type": "Blend",
-                "vintage": 2013,
-                "special notes": ""
-            },
-            {
-                "name": "Mourverde",
                 "price": 18.00,
-                "type": "Mourverde",
-                "vintage": 2012,
-                "special notes": ""
-            }
+                "type": "Cabernet Sauvignon",
+                "vintage": 2015,
+                "special notes": "Notes of clove, nutmeg and cinnamon set the stage for our Bridlewood Paso Robles Cabernet Sauvignon. These nuances are complemented by flavors of black currant, blackberry and cassis.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/cabernet-sauvignon.jpg?7I2H1MchS4gFa7kJhfAzUGL5504piXKR"
+            },
+            {
+                "name": "Blend 175",
+                "price": 18.00,
+                "type": "Blend",
+                "vintage": 2014,
+                "special notes": "A well-balanced expression of the Central Coast region, Blend 175 is comprised of Syrah, Grenache, Petite Sirah and Viognier.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/blend-175.jpg?WZIPXNyJuqiQ68hHYREGrVtF35TeWw7u"
+            },
+            {
+                "name": "Reserve Chardonnay",
+                "price": 35.00,
+                "type": "Chardonnay",
+                "vintage": 2016,
+                "special notes": "The grapes for our Chardonnay were selected from the Santa Lucia Highlands, a premier winegrowing district in the Monterey AVA.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP_Res_Chard_V16_750allwines.png?WZKRC9eQgwSo.FN8hfZyCCJ_WDmSuT1T"
+            },
+            {
+                "name": "Reserve Viognier ",
+                "price": 28.00,
+                "type": "Viognier",
+                "vintage": 2017,
+                "special notes": "This Viognier is creamy and smooth on the palate with an immediate mouth-filling texture and offers flavors of lemon gelato, orange blossom, and dried apricot.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP_Res_Viog_thumb.png?.bPo.uFxilhUlKVhCzBvMFGp8a46Csy6"
+            },
+            {
+                "name": "Reserve Pinot Noir",
+                "price": 50.00,
+                "type": "Pinot Noir",
+                "vintage": 2016,
+                "special notes": "Hints of rhubarb and bay leaf blend with dark cherry cola flavors and earthy notes for a Pinot that is distinctly Santa Rita. The finish is long and intense with a slight nuance of vanilla from oak aging.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/2016%20Sta%20Rita%20Hills%20Pinot%20Noir.png?6A9EkXXYYVk5v6ERKRXdC9SW5_OLgEHo"
+            },
+            {
+                "name": "GSM Blend",
+                "price": 35.00,
+                "type": "Blend",
+                "vintage": 2016,
+                "special notes": "The wine begins with spicy aromas and briary red fruit. The palate is plush and juicy with fruit flavors of strawberry and plum with a hint of black pepper and a tobacco finish.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP_GSMBlen_V16_thumb%20png.png?t87r3H2tkt05BqUGDj8al9T4XtjYQ8bS"
+            },
+            {
+                "name": "Zinfandel Santa Ynez ",
+                "price": 40.00,
+                "type": "Zinfandel",
+                "vintage": 2016,
+                "special notes": "Aromas of wild blackberry, blueberry and notes of licorice play with concentrated flavors of raspberry jam, vanilla and white pepper. Hints of brown sugar and soft tannins from barrel aging form a supple mid-palate, melding into a long, mouth-watering finish.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/2016-Zinfandel-Santa-Ynez-Valley.png?t_W68SO9MQz5ooXkf3fxS1XOLt7fhAF2"
+            },
+            {
+                "name": "Reserve Cabernet Sauvignon",
+                "price": 50.00,
+                "type": "Cabernet Sauvignon",
+                "vintage": 2014,
+                "special notes": "Wild sage, rosemary, and thyme all compete with intense briary blackberry fruit and spicy cedar oak. It is wonderfully complex and intriguing.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP_Happy%20Canyon_Cab_V14_.png?Me62YoxrOOPD8jZZesBkY_74Vu04GOxv"
+            },
+            {
+                "name": "Reserve Syrah Santa Barbara",
+                "price": 35.00,
+                "type": "Syrah",
+                "vintage": 2015,
+                "special notes": "Bright and spicy perfume with hints of black licorice, cloves and cardamom. The rich and complex palate is supple, silky and creamy, with a long finish of toasted oak flavors and just a hint of peppery spice. ",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP_Reserve_Syra_V15_750thumb2.png?u6ListeK0YEfmweX1tbcDQWHWY5qNcq_"
+            },
+            {
+                "name": "Block 7 Syrah",
+                "price": 50.00,
+                "type": "Syrah",
+                "vintage": 2016,
+                "special notes": "Block 7 Syrah is special because of three attributes: the east-west orientation of the block, the clonal change within the block and co-fermentation with Viognier. ",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP_Block%207_Syrah_V16_750allwines.png?ARWvoqAobvJUQEm0rOmyyv5WJgdI7U6u"
+            },
         ],
         "whiteWines": [
             {
-                "name": "Muscat",
-                "price": 17.00,
-                "type": "Muscat",
-                "vintage": 2015,
-                "special notes": ""
-            },
-            {
-                "name": "Chardonnay",
-                "price": 16.00,
+                "name": "Chardonnay Santa Barbara County",
+                "price": 28.00,
                 "type": "Chardonnay",
-                "vintage": 2017,
-                "special notes": ""
-            },
-            {
-                "name": "Sauvignon Blanc",
-                "price": 34.00,
-                "type": "Sauvignon Blanc",
-                "vintage": 2017,
-                "special notes": ""
-            },
-            {
-                "name": "Estate Roussanne",
-                "price": 15.00,
-                "type": "Roussanne",
                 "vintage": 2016,
-                "special notes": ""
+                "special notes": "Flavors of fresh tropical banana, pineapple, pear and peach are complemented nicely by delicate notes of vanilla and cinnamon stick for a Chardonnay that is reminiscent of an apple pie right out of the oven.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/2016-Chardonnay-Santa-Barbara-County.png?gK4PCof5F8x160xfaSpB6NiS59vpVx._"
             },
-            {
-                "name": "Estate Viogner",
-                "price": 25.00,
-                "type": "Viogner",
-                "vintage": 2017,
-                "special notes": ""
-            }
         ],
-        "minPrice": 15.00,
-        "maxPrice": 125.00
+        "Rosé Wines": [
+            {
+                "name": "Rosé Paso Robles",
+                "price": 28.00,
+                "type": "Rosé",
+                "vintage": 2017,
+                "special notes": "Brightly fragrant with aromas of fresh cut strawberries, watermelon and white flowers, our Bridlewood Rosé has a plush palate that finishes refreshingly dry.",
+                "image": "http://s3.amazonaws.com/bridlewoodwinery.com/production/s3fs-public/img/winemaking-note/our-wines/BRP%2017%20rose%20thumb.png?vcAqW.lodxJKeHbVMV1mGUjnItYRPICv"
+            },
+        ],
+        "minPrice": 18.00,
+        "maxPrice": 50.00
     },
 
     {
@@ -894,103 +978,455 @@ const Data = [
         "address": "382 CA-46, Paso Robles CA 93460",
         "redWines": [
             {
-                "name": "Cabernet",
-                "price": 88.00,
-                "type": "Cabernet",
-                "vintage": 2000,
-                "special notes": ""
-            },
-            {
-                "name": "Merlot",
-                "price": 22.00,
-                "type": "Merlot",
-                "vintage": 2010,
-                "special notes": ""
-            },
-            {
-                "name": "Sirah",
-                "price": 25.00,
-                "type": "Syrah",
-                "vintage": 2010,
-                "special notes": ""
-            },
-            {
-                "name": "Cabernet Sauvignon",
-                "price": 65.00,
-                "type": "Cabernet Sauvignon",
-                "vintage": 2002,
-                "special notes": ""
-            },
-            {
-                "name": "Zinfandel",
-                "price": 52.00,
-                "type": "Zinfandel",
-                "vintage": 2003,
-                "special notes": ""
-            },
-            {
-                "name": "Malbec",
-                "price": 14.00,
-                "type": "Malbec",
-                "vintage": 2013,
-                "special notes": ""
-            },
-            {
-                "name": "Red",
-                "price": 24.00,
+                "name": "Côtes-du-Rôbles Rouge ",
+                "price": 30.00,
                 "type": "Blend",
-                "vintage": 2013,
-                "special notes": ""
+                "vintage": 2016,
+                "special notes": "This medium bodied wine captures aromas of dried cherries, cranberries, and forest floor, while the palate is filled with ripe strawberry and rhubarb compote wrapped up in rustic tannins.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_CDROBLES16_PRTSMALLPIC_20180801_151359.PNG"
             },
             {
-                "name": "Mourverde",
-                "price": 38.00,
-                "type": "Mourverde",
-                "vintage": 2012,
-                "special notes": ""
-            }
+                "name": "Eberle Zinfandel ",
+                "price": 30.00,
+                "type": "Zinfandel",
+                "vintage": 2016,
+                "special notes": "Grilled pork and beef will pair perfectly with this wine. Our favorite barbecue pairing is Gary's St. Louis pork spare ribs with his special seasoning - salt and pepper.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_PRZIN16_PRTSMALLPIC_20180801_151339.PNG"
+            },
+            {
+                "name": "Full Boar Red ",
+                "price": 26.00,
+                "type": "Blend",
+                "vintage": "",
+                "special notes": "This full-bodied wine coats your mouth with rich flavors of black cherry, blackberry, and spices balanced with rustic tannins.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_FBRED17_PRTSMALLPIC_20180413_142747.PNG"
+            },
+            {
+                "name": "Syrah, Steinbeck Vineyard",
+                "price": 28.00,
+                "type": "Syrah",
+                "vintage": 2016,
+                "special notes": "This full-bodied wine has aromas and flavors of blueberry and blackberry with a hint of chocolate espresso and a crushed rock minerality.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_SSYRAH16_PRTSMALLPIC_20180301_152224.PNG"
+            },
+            {
+                "name": "Estate Cabernet Sauvignon ",
+                "price": 42.00,
+                "type": "Cabernet Sauvignon",
+                "vintage": 2015,
+                "special notes": " The lush qualities of this wine combined with its velvety tannins make it a perfect wine to pair with a herb crusted prime rib, grilled lamb chops or a beef tenderloin with a blue cheese sauce.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_CABERNET15_PRTSMALLPIC_20180801_151219.PNG"
+            },
+            {
+                "name": "Reserve Estate Cabernet Sauvignon",
+                "price": 90.00,
+                "type": "Cabernet Sauvignon",
+                "vintage": 2013,
+                "special notes": "Rich dark fruit flavors of black plum and currant engulf the palate with hints of licorice, cola, and cardamom wrapped in velvety tannins.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_CABRES13_PRTSMALLPIC_20180801_151854.PNG"
+            },
+            {
+                "name": "Reserve Cabernet Sauvignon Magnum",
+                "price": 225.00,
+                "type": "Cabernet Sauvignon",
+                "vintage": 2009,
+                "special notes": "",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_RCABMAG09_PRTSMALLPIC_20171113_150738.PNG"
+            },
         ],
         "whiteWines": [
             {
-                "name": "Muscat",
-                "price": 13.00,
-                "type": "Muscat",
-                "vintage": 2015,
-                "special notes": ""
+                "name": "Cotes-du-Robles Blanc ",
+                "price": 24.00,
+                "type": "Blend",
+                "vintage": 2017,
+                "special notes": "The crisp and refreshing style of the Côtes-du-Rôbles Blanc lends itself to a wide variety of fare from a savory herb cheesecake with roasted vegetables to a baked lemon butter Tilapia or a creamy Parmesan risotto.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_CDRBLANC17_PRTSMALLPIC_20180801_151724.PNG"
             },
             {
-                "name": "Chardonnay",
-                "price": 14.00,
+                "name": "Eberle Estate Chardonnay ",
+                "price": 24.00,
                 "type": "Chardonnay",
+                "vintage": 2016,
+                "special notes": "he versatile style of Eberle’s Estate Chardonnay makes it a perfect accompaniment to a wide range of cuisines. Enjoy it with lighter dishes like Chicken Piccata or grilled salmon.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_CHARD16_PRTSMALLPIC_20180801_151442.PNG"
+            },
+            {
+                "name": "Eberle Viognier, Mill Road Vynd",
+                "price": 26.00,
+                "type": "Viognier",
                 "vintage": 2017,
-                "special notes": ""
+                "special notes": " Full-bodied yet elegant, Eberle's Viognier has a classic floral bouquet of litchi, orange blossom and honeysuckle with mouthwatering flavors of apricot and peach, culminating in a long, crisp finish.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_MVIOG17_PRTSMALLPIC_20180525_105720.PNG"
+            },
+            {
+                "name": "Estate Muscat Canelli ",
+                "price": 22.00,
+                "type": "Blend",
+                "vintage": 2017,
+                "special notes": "Try it with spicy Thai cuisine, goat cheese on crostini starters or a variety of delicious desserts like crème brulee or honey glazed Panna Cotta with fresh berries.",
+                "image": "https://shop.eberlewinery.com/Catalog/PRT_MUSCAT17_PRTSMALLPIC_20180801_151510.PNG"
+            },
+        ],
+        "minPrice": 22.00,
+        "maxPrice": 225.00
+    },
+    {
+        "name": "Newport Beach Vineyards & Winery",
+        "location": "Newport Beach",
+        "address": "2128 Mesa Dr, Newport Beach, CA 92660",
+        "redWines": [
+            {
+                "name": "The OC Red",
+                "price": 70.00,
+                "type": "Blend",
+                "vintage": 2009,
+                "special notes": "Napa Valley, Meritag 60% Cabernet Sauvignon, 20% Cabernet Franc, 20% Merlot",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/55cd01afe4b0513a93e70811/1439498674216/OC_Red_09_web.jpg?format=300w"
+            },
+            {
+                "name": "Back Bay Cuvee",
+                "price": 60.00,
+                "type": "Blend",
+                "vintage": 2008,
+                "special notes": "Napa Valley, Meritage 51% Cabernet Sauvignon, 21% Cabernet Franc, 21% Petit Verdot, 7% Malbec",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/55cd02e0e4b0af9801dbbaff/1439498977705/Back_bay_08_web.jpg?format=300w"
+            },
+            {
+                "name": "Back Bay Cuvee",
+                "price": 50.00,
+                "type": "Blend",
+                "vintage": 2007,
+                "special notes": "Napa Valley, Meritage 52% Cabernet Sauvignon, 48% Petit Verdot",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/55cd03dde4b030e8fe31bf9e/1439499232083/Back-Bay-07.jpg?format=300w"
+            },
+            {
+                "name": "Coyote Cuvee",
+                "price": 180.00,
+                "type": "Blend",
+                "vintage": 2002,
+                "special notes": "California, Red Silver Medal Winner! 60% Cabernet Sauvignon, 40% Cabernet Franc",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/59f7918b53450a4c5a446c2c/1509396877115/coyote-cuvee-02_web.jpg?format=300w"
+            },
+            {
+                "name": "Wretched Excess",
+                "price": 80.00,
+                "type": "Blend",
+                "vintage": 2005,
+                "special notes": "",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/59f790996c319421a024a4d2/1509396642141/Wretched-Excess-Red05_web.jpg?format=300w"
+            },
+            {
+                "name": "OC Estate Unobtanium",
+                "price": 85.00,
+                "type": "Blend",
+                "vintage": 2014,
+                "special notes": "Newport Beach, Meritage Newest in-stock Estate Vintage",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/59fa51e98e7b0fc09edee1bb/1509577202998/IMG_5865+%283%29.jpg?format=750w"
+            },
+            {
+                "name": "The OC Zin",
+                "price": 40.00,
+                "type": "Zinfendel",
+                "vintage": 2012,
+                "special notes": "California, Old Vine Zinfendel",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/59fa53338165f5028c567b00/1509577528241/IMG_5870+%281%29.jpg?format=750w"
+            }
+
+
+        ],
+        "whiteWines": [
+            {
+                "name": "Chardonnay",
+                "price": 30.00,
+                "type": "Chardonnay",
+                "vintage": 2012,
+                "special notes": "Chardonnay, Russian River Valley",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/55e891e7e4b01728fbd33bfb/1441305065402/Chardonnay_12.jpg?format=750w"
+            },
+        ],
+        "Rosé Wines": [
+            {
+                "name": "Rosé",
+                "price": 26.00,
+                "type": "Rosé",
+                "vintage": 2012,
+                "special notes": "Happy Valley of Santa Barbra",
+                "image": "https://static1.squarespace.com/static/55a4061ce4b0218f0cddf270/55c3cc6de4b0d25cdcd03c06/592f4c72be6594aca360b156/1496271988665/Rose_12_web.jpg?format=750w"
+            },
+        ],
+        "minPrice": 26.00,
+        "maxPrice": 180.00
+    },
+
+    {
+        "name": "Bel Vino Winery",
+        "location": "Temecula",
+        "address": "33515 Rancho California Rd, Temecula, CA 92591",
+        "redWines": [
+            {
+                "name": "Syrah",
+                "price": 34.95,
+                "type": "Syrah",
+                "vintage": 2016,
+                "special notes": " Made from top quality California grapes, Syrah is medium to full bodied with aromas and flavors of black pepper, blackberry and spicy fruit. Oak barrel aging brings a spice and vanilla notes and sometimes a hint of chocolate or espresso.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/Syrah01-260x317.jpg"
+            },
+            {
+                "name": "Cabernet Franc",
+                "price": 35.95,
+                "type": "Cabernet Franc",
+                "vintage": 2016,
+                "special notes": " The wine has flavors and aromas of spices and dark fruits. Oak aging gives a softening and mellowing effect to the wine and brings in smoky notes and flavors of oak and vanilla. This is a great sipping wine that pairs well with red meat, marinara pasta and other hearty and spicy foods.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/Cabernet-Franc01-260x317.jpg"
+            },
+            {
+                "name": "Zinfandel",
+                "price": 32.95,
+                "type": "Zinfandel",
+                "vintage": 2013,
+                "special notes": "Zinfandel is noted as a zesty wine with spicy pepper, raspberry, cherry, wild berry and plum flavors. Oak aging has a softening effect and helps brings out this varietal’s earthy notes. This is a great sipping wine that pairs well with red meat, marinara pasta and other hearty and spicy foods.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/Zinfandel01-260x317.jpg"
+            },
+            {
+                "name": "Long Valley Red",
+                "price": 32.95,
+                "type": "Zinfandel",
+                "vintage": 2013,
+                "special notes": "Zinfandel is noted as a zesty wine with spicy pepper, raspberry, cherry, wild berry and plum flavors. Oak aging has a softening effect and helps brings out this varietal’s earthy notes. This is a great sipping wine that pairs well with red meat, marinara pasta and other hearty and spicy foods.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/Long-Valley-Red01-260x317.jpg"
+            },
+            {
+                "name": "Cabernet Sauvignon Vintners",
+                "price": 29.95,
+                "type": "Cabernet",
+                "vintage": 2016,
+                "special notes": "It features aromas & flavors of black cherry, plum and dark chocolate. Oak aging softens and flavors the wine with notes of oak, vanilla and spice. The wine pairs well with red meat, marinara pasta & spicy foods.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2017/08/Cab-Sauvignon-V.S01.-260x317.jpg"
+            },
+            {
+                "name": "Merlot",
+                "price": 32.95,
+                "type": "Merlot",
+                "vintage": 2016,
+                "special notes": "Oak barrel aging added hints of vanilla, cedar and smoky notes while both complementing and softening the wine. Merlot pairs well with red meats, marinara dishes and other hearty or spicy foods, and is great for sipping.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2017/08/Merlot01-260x317.jpg"
+            },
+            {
+                "name": "Dolce",
+                "price": 24.95,
+                "type": "Dolce",
+                "vintage": "",
+                "special notes": "The wine has a pleasant sweetness level, though it is far from being overly sweet, presents flavors and aromas of black cherries and plums and it has a lush mouth feel.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2017/04/Dolce01-260x317.jpg"
+            },
+        ],
+        "whiteWines": [
+
+            {
+                "name": "White Zinfandel",
+                "price": 21.95,
+                "type": "Zinfandel",
+                "vintage": 2016,
+                "special notes": "The wine has a salmon color with vibrant aromas and fresh flavors of strawberry, red cherry and red raspberry. Small batch hand crafting resulted in a high quality wine that is crisp, refreshing and fruity.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/White-Zinfandel01-260x317.jpg"
             },
             {
                 "name": "Sauvignon Blanc",
-                "price": 16.00,
-                "type": "Sauvignon Blanc",
-                "vintage": 2017,
-                "special notes": ""
-            },
-            {
-                "name": "Estate Roussanne",
-                "price": 13,
-                "type": "Roussanne",
+                "price": 21.95,
+                "type": "Sauvignon",
                 "vintage": 2016,
-                "special notes": ""
+                "special notes": "The wine has a light gold color and exhibits delicious fruity and floral flavors and aromas. Small batch hand crafting results in a high quality wine that is crisp, clean and refreshing. ",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/2016-Sauvignon-Blanc01-260x317.jpg"
             },
+
             {
-                "name": "Estate Viogner",
-                "price": 15.00,
-                "type": "Viogner",
-                "vintage": 2017,
-                "special notes": ""
-            }
+                "name": "Gewurtztraminer",
+                "price": 21.95,
+                "type": "Blend",
+                "vintage": 2016,
+                "special notes": " The wine has a light gold color & aromas of roses, passion fruit & lychee.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/2016-Gewurtztraminer01-260x317.jpg"
+            },
+
+            {
+                "name": "Field Blend",
+                "price": 17.95,
+                "type": "Blend",
+                "vintage": "",
+                "special notes": "The wine has a light gold color with refreshing aromas and flavors of honeysuckle, pear, fig and white peach. Small batch hand crafting results in a high quality wine that is crisp, clean and fruity.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2017/04/Field-Blend01-260x317.jpg"
+            },
+
+            {
+                "name": "Muscat",
+                "price": 21.95,
+                "type": "Muscat",
+                "vintage": 2016,
+                "special notes": "The wine has a light gold color and is noted for its Muscat “grapey” aroma as well as citrus, rose and peach notes. Small batch hand crafting resulted in a high quality wine that is crisp, refreshing and fruity.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2017/04/Muscat01.jpg"
+            },
+
+            {
+                "name": "White Merlot",
+                "price": 21.95,
+                "type": "Merlot",
+                "vintage": "",
+                "special notes": "The wine was styled as a rosé which created its ruby red color. This varietal has aromas and flavors of strawberry and raspberry, and its light residual sugar level contributes to a long, cherry-berry finish.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2017/04/White-Merlot01-260x317.jpg"
+
+            },
+
+            {
+                "name": "Chardonnay",
+                "price": 21.95,
+                "type": "Chardonnay",
+                "vintage": 2016,
+                "special notes": "Chardonnay is a consistently rich wine with aromas and flavors of apple, peach, pear and honey. Oak aging adds flavors of oak, vanilla and spice.",
+                "image": "https://www.belvinowinery.com/wp-content/uploads/2018/05/Chardonnay01-260x317.jpg"
+            },
+
+
         ],
-        "minPrice": 10.00,
-        "maxPrice": 75.00
+        "minPrice": 17.95,
+        "maxPrice": 35.95
     },
 
+    {
+        "name": "Orfila Winery",
+        "location": "Escondido",
+        "address": "13455 San Pasqual Rd, Escondido, CA 92025",
+        "redWines": [
+
+            {
+                "name": "Benign Neglect",
+                "price": 26.00,
+                "type": "Pinot Noir",
+                "vintage": 2015,
+                "special notes": "Cherry, raspberry, pomegranate, black tea leaves",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/368738/392442.jpg&size=160,213"
+            },
+            {
+                "name": "Estate Syrah",
+                "price": 33.00,
+                "type": "Syrah",
+                "vintage": 2016,
+                "special notes": "Smoke, cedar, dark fruit, boysenberry",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/406670/406734.jpg&size=160,213"
+            },
+            {
+                "name": "Zinfandel Santa Barbara",
+                "price": 32.00,
+                "type": "Zinfandel",
+                "vintage": 2016,
+                "special notes": "Smoke, black licorice, blackberry, casis, spice",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/405588/405590.jpg&size=160,213"
+            },
+            {
+                "name": "Estate Merlot",
+                "price": 26.00,
+                "type": "Merlot",
+                "vintage": 2015,
+                "special notes": "Beautiful dark red in color with inviting aromas of plum, mocha and dried herbs. The palate is full and rich with notes of fresh crushed berries, espresso and cedar spice.",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/405383/405385.jpg&size=160,213"
+            },
+            {
+                "name": "Petite Sirah Slo",
+                "price": 38.00,
+                "type": "Sirah",
+                "vintage": 2016,
+                "special notes": "Raspberry, pomegranate, black fruit, red currant",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/405585/405587.jpg&size=160,213"
+            },
+            {
+                "name": "Tempranillo",
+                "price": 42.00,
+                "type": "Blend",
+                "vintage": 2016,
+                "special notes": "Plum, cedar, vanilla, cherry",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407768/407770.jpg&size=160,213"
+            },
+            {
+                "name": "Lagrein San Luis Obispo",
+                "price": 33.00,
+                "type": "Blend",
+                "vintage": 2016,
+                "special notes": "Berry, floral, plumbs, herbal, savory",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/406907/406909.jpg&size=160,213"
+            },
+            {
+                "name": "Estate Sangiovese",
+                "price": 36.00,
+                "type": "Sangiovese",
+                "vintage": 2016,
+                "special notes": "Cedar, blackberry, bright tannins, vanilla",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/408048/408050.jpg&size=160,213"
+            },
+            {
+                "name": "Element 119",
+                "price": 50.00,
+                "type": "Pinot Noir",
+                "vintage": 2016,
+                "special notes": "Black tea, cherry, ripe red fruit, warm spice",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407771/407773.jpg&size=160,213"
+            },
+        ],
+        "whiteWines": [
+
+            {
+                "name": "Chardonnay",
+                "price": 25.00,
+                "type": "Chardonnay",
+                "vintage": 2015,
+                "special notes": "Creamy, ripe pear, baked apple",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/368756/392444.jpg&size=160,213"
+            },
+            {
+                "name": "Estate Viognier",
+                "price": 27.00,
+                "type": "Viognier",
+                "vintage": 2016,
+                "special notes": "White flowers, tangerine, stone fruits, pear",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/405341/405363.jpg&size=160,213"
+            },
+            {
+                "name": "Ambassador's Chardonnay",
+                "price": 36.00,
+                "type": "Chardonnay",
+                "vintage": 2016,
+                "special notes": "Citrus blossom, creme crulee, tropical fruit, new oak",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/405373/405374.jpg&size=160,213"
+            },
+            {
+                "name": "Pinot Blanc",
+                "price": 30.00,
+                "type": "Pinot",
+                "vintage": 2016,
+                "special notes": "Honeysuckle, jasmine, pineapple, mango, citrus",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/405375/405378.jpg&size=160,213"
+            },
+        ],
+        "Rosé Wines": [
+            {
+                "name": "Estate Rosé",
+                "price": 24.00,
+                "type": "Rosé",
+                "vintage": 2017,
+                "special notes": "Watermelon, strawberry, cranberry, tropical fruit",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407774/407776.jpg&size=160,213"
+            },
+            {
+                "name": "California Rosé",
+                "price": 26.00,
+                "type": "Rosé",
+                "vintage": 2017,
+                "special notes": "Strawberry, melon, cranberry, well balanced",
+                "image": "http://shop.orfila.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/408045/408047.jpg&size=160,213"
+            },
+        ],
+        "minPrice": 24.00,
+        "maxPrice": 50.00 
+    },
     {
         "name": "J Lohr",
         "location": "Paso Robles",
@@ -1011,7 +1447,6 @@ const Data = [
                 "vintage": 2016,
                 "special notes": "",
                 "image": "https://jlohr.imgix.net/bottle_shots/Cypress_Vineyards_Cabernet_Sauvignon.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=dfdeaf1a2b5ac9346b08f5e278f72b1b"
-
             },
             {
                 "name": "Hill Top",
@@ -1020,7 +1455,6 @@ const Data = [
                 "vintage": 2015,
                 "special notes": "Delicious with rosemary-seasoned ribeye, served with garlic roasted potatoes with parsnips and fennel.",
                 "image": "https://jlohr.imgix.net/bottle_shots/Hilltop_Cabernet_Sauvignon.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=26716eecdff8323da2358898213d2d90"
-
             },
             {
                 "name": "Seven Oaks",
@@ -1029,7 +1463,6 @@ const Data = [
                 "vintage": 2016,
                 "special notes": "Delicious paired with wild mushroom risotto or an herb encrusted rack of lamb with creamy parmesan polenta.",
                 "image": "https://jlohr.imgix.net/bottle_shots/Seven_Oaks_Cabernet_Sauvignon.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=2e0d6ec8f79e23997eef9ef92eab5d50"
-
             },{
                 "name": "Carol Vineyard",
                 "price": 60.00,
@@ -1037,7 +1470,6 @@ const Data = [
                 "vintage": 2014,
                 "special notes": "Excellent with grilled entrecôte and shallots, or a roasted pork loin with porcini mushrooms and fennel.",
                 "image": "https://jlohr.imgix.net/bottle_shots/Carol_s_VIneyard_Cabernet_Sauvignon.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=bbc01cc9885ff27eeb2349db49fbc39f"
-
             }
             
         ],
@@ -1049,7 +1481,6 @@ const Data = [
                 "vintage": 2016,
                 "special notes": "This wine can be enjoyed with a variety of dishes, such as salmon in a creamy dijon sauce, chicken with mushroom sauce, or niçoise salad with a citrus vinaigrette.",
                 "image": "https://jlohr.imgix.net/bottle_shots/Riverstone_Chardonnay.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=09acb900848b5a5af071918eb59874ad"
-
             },
             {
                 "name": "Arroyo Vista",
@@ -1058,7 +1489,6 @@ const Data = [
                 "vintage": 2016,
                 "special notes": "Herb chicken with toasted hazelnuts, seared scallops with lemon tarragon, or triple crème brie cheese.",
                 "image": "https://jlohr.imgix.net/bottle_shots/Arroyo_Vista_Chardonnay.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=2e1834f3d0128fb22b11d94b2ef843ec"
-
             },
             {
                 "name": "Cypress Vineyard",
@@ -1067,7 +1497,6 @@ const Data = [
                 "vintage": 2016,
                 "special notes": "",
                 "image": "https://jlohr.imgix.net/bottle_shots/Cypress_Vineyards_Chardonnay.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=85907432640cffbe5a8d9115aab359b9"
-
             },
             {
                 "name": "October Night",
@@ -1076,7 +1505,6 @@ const Data = [
                 "vintage": 2016,
                 "special notes": "This wine is the perfect pairing to eggs benedict, crab cakes with creamy orange reduction sauce, cedar plank salmon, or almond-crusted halibut.",
                 "image": "https://jlohr.imgix.net/bottle_shots/October_Night_Chardonnay.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=854a597c571ad57da4cfda895970f793"
-
             },
             {
                 "name": "Flume Crossing",
@@ -1085,14 +1513,12 @@ const Data = [
                 "vintage": 2017,
                 "special notes": "Serve with seared scallops sautéed in citrus butter, halibut with lime and tarragon, sushi, or as an aperitif with goat cheese or oysters.",
                 "image": "https://jlohr.imgix.net/bottle_shots/Flume_Crossing_Sauvignon_Blanc.png?auto=compress%2Cformat&fit=clip&h=600&ixlib=php-1.1.0&q=80&s=12c9be8decc5a97224abc27c087ef6c0"
-
             }
             
         ],
         "minPrice": 10.00,
         "maxPrice": 105.00
     },
-
     {
         "name": "Halter Ranch Winery",
         "location": "Paso Robles",
@@ -1152,7 +1578,6 @@ const Data = [
             }
         ],
         "Rosé Wines": [
-
             {
                 "name": "Rosé",
                 "price": 26.00,
@@ -1162,11 +1587,9 @@ const Data = [
                 "image": "http://filemanager-dfw.orderport.net/HalterRanch/Catalog/c102c42b-c1c5-448d-a849-308a4c2b76fc-Thumb.jpg?ts=636528420298900000"
             }
         ],
-
         "minPrice": 26.00,
         "maxPrice": 60.00
     },
-
     {
         "name": "Brander Winery",
         "location": "Santa Barbara",
@@ -1214,8 +1637,6 @@ const Data = [
                 "special notes": " 2014 Cuveé Nicolas, we blended these two varieties together (85% Sauvignon Blanc and 15% Semillon), then rested a portion of it in French oak, resulting in a wine loaded with character and complexity. A fascinating nose of tropical fruit, citrus zest, and honeysuckle flows into a wild palate of white peach, bee’s wax, and key lime.",
                 "image": "https://www.kreck.com/CartXE/Stores/499/fullsize/cuvee_nicolaslarge.png"
             },
-
-
         ],
         "Rosé Wines": [
             {
@@ -1228,11 +1649,9 @@ const Data = [
             }
             
         ],
-
         "minPrice": 16.00,
         "maxPrice": 32.00
     }
-
 ]
 
 
@@ -1242,27 +1661,41 @@ const Data = [
 //     "address": ,
 //     "redWines": [
 
-// {
-//     "name": ,
-//     "price": ,
-//     "type": ,
-//     "vintage": ,
-//     "special notes":
-// },
+//     {
+//         "name": "",
+//         "price": ,
+//         "type": "",
+//         "vintage": ,
+//         "special notes": "",
+//         "image": ""
+//     },
+
 
 //     ],
 // "whiteWines": [
 
 //     {
-//         "name": ,
+//         "name": "",
 //         "price": ,
-//         "type": ,
+//         "type": "",
 //         "vintage": ,
-//         "special notes":
+//         "special notes": "",
+//         "image": ""
 //     },
+
 // ],
 //     "minPrice": ,
 //     "maxPrice": 
 //     }
+
+
+// {
+//     "name": "",
+//     "price": ,
+//     "type": "",
+//     "vintage": ,
+//     "special notes": "",
+//     "image": ""
+// },
 
 export default Data;
