@@ -6,9 +6,10 @@
 }
 
 .customBackground {
-  background-color: #C48F65;
+  background-color: #C0B283;
   border-radius: 20px;
   padding: 0px;
+  opacity: 0.97;
 }
 
 .pointerHover {
@@ -34,7 +35,7 @@
   margin-right: 40px;
 }
 .colorPick {
-  background-color: #836953;
+  background-color: #373737;
 }
 .fontSize {
   font-size: 40px;
@@ -132,17 +133,50 @@ hr {
   width: 100%;
   padding: 100px, 100px;
   margin: 20px 50px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
   
 }
 #wineryList {
   width: 100%;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  text-align: center;
+  margin: 25px auto;
+}
+#wineryList td {
+  color: #7b6b43;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
 }
 
+.customWineDiv {
+  display:inline-block;
+  width: 29.82%;
+  background-color: #F4F4F4;
+  border-style: double;
+  height: 500px;
+  vertical-align: middle;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 20px;
+}
+
+.divcontainerdivtext {
+  position: absolute;
+	bottom: 0;
+	left: 33.3333333333333333333%;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+.customWinePrice {
+  font-size: 20px;
+  margin-bottom: 2px;
+}

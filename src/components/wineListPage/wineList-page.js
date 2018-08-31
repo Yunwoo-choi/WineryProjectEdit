@@ -140,17 +140,23 @@ class WineListings extends Component {
     saveButton = name => {
         let index = this.state.localWine.findIndex(x => x.name === name);
         this.props.userPreferenceSelection(this.state.localWine[index]);
-        this.setState ({
+        this.setState({
             bookmarkIndicator: false
         })
     }
 
-    conditionalRender = pagename => {
+    conditionalRenderWinery = pagename => {
+        this.props.backgroundChanger(1)
+        this.props.changePage(pagename)
+    }
+
+    conditionalRenderUserPage = pagename => {
+        this.props.backgroundChanger(3)
         this.props.changePage(pagename)
     }
 
     conditionalRenderLogin = pagename => {
-        this.props.backgroundChanger(true)
+        this.props.backgroundChanger(0)
         this.props.changePage(pagename)
     }
 
@@ -174,38 +180,34 @@ class WineListings extends Component {
                                 <th>Price <i className="fa fa-sort pointerHover" onClick={() => this.sortPrice()}></i></th>
                                 <th>Type <i className="fa fa-sort pointerHover" onClick={() => this.sortType()}></i></th>
                                 <th>Vintage <i className="fa fa-sort pointerHover" onClick={() => this.sortVintage()}></i></th>
-                                <th>Special Information</th>
                             </tr>
                         </thead>
-                        <tbody >
-                            {
-                                this.state.localWine.map((wine) => {
-                                    /**
-                                     * Feel free to inspect the wine variable here
-                                     * 
-                                     * Note we will want to make this table row clickable
-                                     */
-                                    return (
-                                        <tr key={wine.name}>
-                                            <th width="25%">{wine.name} <i className="fa fa-bookmark-o float-right pointerHover" onClick={() => this.saveButton(wine.name)}></i></th>
-                                            <td width="9%">${wine.price}</td>
-                                            <td> {wine.type}</td>
-                                            <td width="9%">{wine.vintage}</td>
-                                            <td>{wine["special notes"]}</td>
-                                            <td><img src={wine.image}></img></td>
-                                        </tr>
-                                    )
-                                })
-                            }
-                        </tbody>
                     </table>
+                    <div className = "customWineDiv2">
+                    {
+                            this.state.localWine.map((wine) => {
+                                    return (
+                            <div className = "customWineDiv" key={wine.name}>
+                                <p className = "text-center"><img className="img-thumbnail rounded"src={wine.image}></img></p>
+                                <p className = "text-center font-italic">{wine.vintage} {wine.name}</p>
+                                <hr style={{width:'50%'}} ></hr>
+                                <p className = "text-center font-weight-bold customWinePrice">${wine.price}</p>
+                                <hr style={{width:'50%'}}></hr>
+                                <p className = "text-center">{wine["special notes"]}</p>
+                                <p className = "float-right divcontainerdivtext"><i className="fa fa-bookmark-o pointerHover" onClick={() => this.saveButton(wine.name)}>Save this wine!</i></p>
+                            </div>
+                            )
+                        })
+
+                    }
+                    </div>
                 </div>
 
                 <footer className="page-footer font-small colorPick">
                     <div className="footer-copyright text-center py-3">
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Winery Page")}>Winery List Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("User Page")}>User Page</button></p>
+                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
+                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWinery("Winery Page")}>Winery List Page</button></p>
+                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
                     </div>
                 </footer>
 
@@ -214,8 +216,4 @@ class WineListings extends Component {
         );
     }
 }
-
-
-
-
 export default WineListings;

@@ -9,6 +9,7 @@ class Wineries extends React.Component {
         userMaxPrice: '',
         filterCategory: ['wineries', 'location', 'userMinPrice', 'userMaxPrice'],
         filterBy: '',
+        filterBy: 'None',
         userChoice: ''
     }
 
@@ -53,6 +54,13 @@ class Wineries extends React.Component {
         });
     }
 
+    filterByNone = (e) => {
+        this.setState({
+            userNone: e.target.value,
+            filterBy: 'None'
+        });
+    }
+
     chooseWinery = winery => {
         let index = 0;
         for (let i = 0; i < this.props.wineryList.length; i++) {
@@ -61,8 +69,7 @@ class Wineries extends React.Component {
                 console.log(index);
                 this.props.wineryChosen(index);
                 this.props.changePage("Wine Listing Page")
-            } else {
-                console.log("Its not working");
+                this.props.backgroundChanger(2)
             }
         }
         // this wont work, an idea of how u could do it
@@ -73,12 +80,18 @@ class Wineries extends React.Component {
         // try to console.log this winery object in your next component (winelist component)
     }
 
-    conditionalRender = pagename => {
+    conditionalRenderWineList = pagename => {
+        this.props.backgroundChanger(2)
+        this.props.changePage(pagename)
+    }
+
+    conditionalRenderUserPage = pagename => {
+        this.props.backgroundChanger(3)
         this.props.changePage(pagename)
     }
 
     conditionalRenderLogin = pagename => {
-        this.props.backgroundChanger(true)
+        this.props.backgroundChanger(0)
         this.props.changePage(pagename)
     }
 
@@ -138,7 +151,9 @@ class Wineries extends React.Component {
                             <button className="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
                         </div>
                     </div>
-
+                    <div>
+                        <button className="btn btn-light btn-lg float-right" onClick={this.filterByNone}>Clear Filter</button>    
+                    </div>
                 </div>
                 <div id="wineryList">
                     <table className="table-hover" width="100%">
@@ -246,8 +261,8 @@ class Wineries extends React.Component {
             <footer className="page-footer font-small colorPick float-bottom">
                     <div className="footer-copyright text-center py-3">
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Wine Listing Page")}>Wine List Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("User Page")}>User Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWineList("Wine Listing Page")}>Wine List Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
                     </div>
                 </footer>
             </div>

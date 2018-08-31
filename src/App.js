@@ -8,9 +8,9 @@ import Data from './data'
 import logo from './logo.jpg'
 // import backgroundImage from './components/pictures/backgroundImage.png'
 import test from './components/pictures/test.jpg'
-// import test2 from './components/pictures/test2.jpg'
-// import test3 from './components/pictures/test3.jpg'
-// import test4 from './components/pictures/test4.jpg'
+import test2 from './components/pictures/test2.jpg'
+import test3 from './components/pictures/test3.jpg'
+import test4 from './components/pictures/test4.jpg'
 
 var backgroundImageStyle = {
   backgroundImage: `url(${logo})`,
@@ -22,8 +22,16 @@ var backgroundImageStyle = {
 }
 
 
-var noBackgroundImageStyle = {
+var BackgroundImageStyleWinery = {
   backgroundImage: `url(${test})`,
+}
+
+var backgroundImageStyleWineList= {
+  backgroundImage: `url(${test3})`,
+}
+
+var BackgroundImageStyleUserPage = {
+  backgroundImage: `url(${test4})`,
 }
 
 
@@ -53,9 +61,9 @@ class App extends Component {
     loginUsers: [],
     pageChanger: "Wine Listing Page",
     Data: Data,
-    backgroundIndicator: false,
+    backgroundIndicator: 0,
     userPreference: [], 
-    chooseWinery: 0
+    chooseWinery: 3
   }
 
   addToUsers = user => {
@@ -165,7 +173,14 @@ class App extends Component {
 
 
   render() {
-    let backgroundImageChange = this.state.backgroundIndicator ? backgroundImageStyle : noBackgroundImageStyle
+    let backgroundImageChange = this.state.backgroundIndicator ===0 
+    ? backgroundImageStyle 
+    : this.state.backgroundIndicator===1
+    ? BackgroundImageStyleWinery
+    : this.state.backgroundIndicator===2 
+    ? backgroundImageStyleWineList 
+    : BackgroundImageStyleUserPage
+    
     return (
       <div style={backgroundImageChange}>
         {this.pageIndication()}
