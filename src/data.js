@@ -5,7 +5,7 @@ const Data = [
         "address": "32720 Rancho California Rd, Temecula, CA 92591",
         "redWines": [
             {
-                "name": "Owner\'s Private Reserve",
+                "name": "Owner's Private Reserve",
                 "price": 175.00,
                 "type": "Blend",
                 "vintage": 2012,

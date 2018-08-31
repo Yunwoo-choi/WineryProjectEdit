@@ -1,9 +1,12 @@
-
 .Wineries-Database-Header {
   font-family: "Zapfino";
   margin-top: 40px;
   color: #34908d;
   text-align: center;
+}
+
+.customBackground {
+  background-color: grey;
 }
 
 .ornament {

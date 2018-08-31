@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import '../../App.css'
-
+let bookmarkIcon = "fa fa-bookmark-o float-right";
+let bookmarkIconFilled = "fa fa-bookmark float-right";
 class WineListings extends Component {
     state = {
         localWine: this.props.wines,
         indicatorName: 0,
         indicatorType: 0,
         indicatorVintage: 0,
-        indicatorPrice: 0
+        indicatorPrice: 0,
+        bookmarkIndicator: true
     }
 
     compare = (a, b) => {
@@ -137,17 +139,25 @@ class WineListings extends Component {
 
     saveButton = name => {
         let index = this.state.localWine.findIndex(x => x.name === name);
-        console.log(index);
         this.props.userPreferenceSelection(this.state.localWine[index]);
+        this.setState ({
+            bookmarkIndicator: false
+        })
     }
 
     conditionalRender = pagename => {
         this.props.changePage(pagename)
     }
 
+    conditionalRenderLogin = pagename => {
+        this.props.backgroundChanger(true)
+        this.props.changePage(pagename)
+    }
+
 
 
     render() {
+        let bookmarkType = this.state.bookmarkIndicator ? "fa fa-bookmark-o float-right": "fa fa-bookmark float-right"
         return (
             <div>
                 <div className="Wineries-Database-container">
@@ -156,7 +166,7 @@ class WineListings extends Component {
                 </div>
 
 
-                <div className='container'>
+                <div className='container customBackground'>
                     <table className="table table-bordered">
                         <thead>
                             <tr>
@@ -178,7 +188,7 @@ class WineListings extends Component {
                                      */
                                     return (
                                         <tr key={wine.name}>
-                                            <th width="25%">{wine.name} <i className="fa fa-bookmark-o float-right" aria-hidden="true" onClick={() => this.saveButton(wine.name)}></i></th>
+                                            <th width="25%">{wine.name} <i className="fa fa-bookmark-o float-right" onClick={() => this.saveButton(wine.name)}></i></th>
                                             <td width="9%">${wine.price}</td>
                                             <td> {wine.type}</td>
                                             <td width="9%">{wine.vintage}</td>
@@ -193,7 +203,7 @@ class WineListings extends Component {
 
                 <footer className="page-footer font-small colorPick">
                     <div className="footer-copyright text-center py-3">
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Login Page")}>Login Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Winery Page")}>Winery List Page</button></p>
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("User Page")}>User Page</button></p>
                     </div>

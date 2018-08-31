@@ -6,6 +6,7 @@ import WineListings from './components/wineListPage/wineList-page';
 import UserPage from './components/userPage/user-page';
 import Data from './data'
 import logo from './logo.jpg'
+import backgroundImage from './components/pictures/backgroundImage.png'
 
 var backgroundImageStyle = {
   backgroundImage: `url(${logo})`,
@@ -18,7 +19,7 @@ var backgroundImageStyle = {
 
 
 var noBackgroundImageStyle = {
-
+  backgroundImage: `url(${backgroundImage})`,
 }
 
 
@@ -60,7 +61,7 @@ class App extends Component {
     });
   }
 
-  wineryChose = user => {
+  wineryChosen = user => {
     let newWineryChosen = user;
     this.setState({
       chooseWinery: newWineryChosen
@@ -124,14 +125,16 @@ class App extends Component {
           wineryList = {this.state.Data}
           wineryChosen = {this.wineryChosen}
           changePage={this.changePage}
+          backgroundChanger={this.changeBackgroundImage}
           />
         )
       case "Wine Listing Page":
         return (
           <WineListings
-            wines={this.wineryPicked(0)}
+            wines={this.wineryPicked(this.state.chooseWinery)}
             userPreferenceSelection={this.userPreferenceSelection}
             changePage={this.changePage}
+            backgroundChanger={this.changeBackgroundImage}
           />
         )
       case "User Page":
