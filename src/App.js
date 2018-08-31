@@ -99,6 +99,13 @@ class App extends Component {
     })
   }
 
+  userPreferenceReset = user => {
+    let newUserPreference = []
+    this.setState({
+      userPreference:newUserPreference
+    })
+  }
+
   wineryPicked = index => {
     let wines = [];
     let winery = this.state.Data[index];
@@ -121,6 +128,7 @@ class App extends Component {
             userVerify={this.state.users}
             pageChanger={this.changePage}
             backgroundChanger={this.changeBackgroundImage}
+            userPreferenceReset = {this.userPreferenceReset}
           />
         )
       case "Winery Page":

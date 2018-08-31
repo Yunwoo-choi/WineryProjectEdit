@@ -44,7 +44,7 @@ class FormRight extends Component {
         e.preventDefault();
         if (this.state.password === this.state.passwordVerify) {
         this.props.addToUsers(this.state);
-
+        
         this.setState({
             username: '',
             email: '',

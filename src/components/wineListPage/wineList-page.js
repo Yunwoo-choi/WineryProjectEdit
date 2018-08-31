@@ -175,7 +175,6 @@ class WineListings extends Component {
                                 <th>Type <i className="fa fa-sort pointerHover" onClick={() => this.sortType()}></i></th>
                                 <th>Vintage <i className="fa fa-sort pointerHover" onClick={() => this.sortVintage()}></i></th>
                                 <th>Special Information</th>
-
                             </tr>
                         </thead>
                         <tbody >
@@ -193,6 +192,7 @@ class WineListings extends Component {
                                             <td> {wine.type}</td>
                                             <td width="9%">{wine.vintage}</td>
                                             <td>{wine["special notes"]}</td>
+                                            <td><img src={wine.image}></img></td>
                                         </tr>
                                     )
                                 })
