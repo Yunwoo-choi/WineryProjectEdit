@@ -123,16 +123,26 @@ hr {
   width: 100%;
   padding: 100px, 100px;
   margin: 20px 50px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
   
 }
 #wineryList {
   width: 100%;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  text-align: center;
+  margin: 25px auto;
+}
+
+#wineryList td {
+  color: #7b6b43;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
 }

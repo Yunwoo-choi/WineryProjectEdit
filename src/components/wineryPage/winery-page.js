@@ -11,7 +11,7 @@ class Wineries extends React.Component {
         userMinPrice: '',
         userMaxPrice: '',
         filterCategory: ['wineries', 'location', 'userMinPrice', 'userMaxPrice'],
-        filterBy: '',
+        filterBy: 'None',
         userChoice: ''
     }
 
@@ -56,6 +56,14 @@ class Wineries extends React.Component {
         });
     }
 
+    filterByNone = (e) => {
+        this.setState({
+            userNone: e.target.value,
+            filterBy: 'None'
+        });
+    }
+
+
     chooseWinery = winery => {
         let index = 0;
         for (let i = 0; i < this.props.wineryList.length; i++) {
@@ -63,6 +71,7 @@ class Wineries extends React.Component {
                 index = i;
                 console.log(index);
                 this.props.wineryChosen(index);
+                this.props.changePage("Wine Listing Page")
             } else {
                 console.log("Its not working");
             }
@@ -133,6 +142,9 @@ class Wineries extends React.Component {
                             <button class="dropdown-item" value="100" onClick={this.filterByMaxPrice}>100</button>
                             <button class="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
                         </div>
+                    </div>
+                    <div>
+                        <button className="btn btn-light btn-lg float-right" onClick={this.filterByNone}>Clear Filter</button>    
                     </div>
 
                 </div>
@@ -217,8 +229,8 @@ class Wineries extends React.Component {
                                                 })
 
 
-                                                :
-                                                this.props.wineryList.map((winery, index) => {
+                                            :
+                                            this.props.wineryList.map((winery, index) => {
                                                     /**
                                                      * Feel free to inspect the person variable here
                                                      * 
@@ -242,7 +254,7 @@ class Wineries extends React.Component {
             <footer className="page-footer font-small colorPick float-bottom">
                     <div className="footer-copyright text-center py-3">
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Login Page")}>Login Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Wine Listing Page")}>Wine List Page OMG</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Wine Listing Page")}>Wine List Page</button></p>
                             <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("User Page")}>User Page</button></p>
                     </div>
                 </footer>

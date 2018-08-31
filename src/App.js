@@ -7,16 +7,18 @@ import UserPage from './components/userPage/user-page';
 import Data from './data'
 import logo from './logo.jpg'
 
+// logo on user page
 var backgroundImageStyle = {
   backgroundImage: `url(${logo})`,
   position: 'absolute',
+  // spans whole div
   top: '0',
   right: '0',
   bottom: '0',
   left: '0'
 }
 
-
+// logo goes away
 var noBackgroundImageStyle = {
 
 }
@@ -46,10 +48,14 @@ class App extends Component {
       }
     ],
     loginUsers: [],
-    pageChanger: "Wine Listing Page",
+    // changes page based on input
+    pageChanger: "Winery Page",
     Data: Data,
+    // changes background
     backgroundIndicator: false,
+    // stores one wine object
     userPreference: [], 
+    // index of each winery in Data array
     chooseWinery: 0
   }
 
@@ -60,7 +66,7 @@ class App extends Component {
     });
   }
 
-  wineryChose = user => {
+  wineryChosen = user => {
     let newWineryChosen = user;
     this.setState({
       chooseWinery: newWineryChosen

@@ -179,7 +179,7 @@ class WineListings extends Component {
                                     return (
                                         <tr key={wine.name}>
                                             <th width="25%">{wine.name} <i className="fa fa-bookmark-o float-right" aria-hidden="true" onClick={() => this.saveButton(wine.name)}></i></th>
-                                            <td width="9%">${wine.price}</td>
+                                            <td width="9%">${wine.price}.00</td>
                                             <td> {wine.type}</td>
                                             <td width="9%">{wine.vintage}</td>
                                             <td>{wine["special notes"]}</td>
