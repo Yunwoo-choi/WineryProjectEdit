@@ -23,6 +23,7 @@ const Login = props => {
                         userVerify = {props.userVerify} 
                         pageChanger = {props.pageChanger}
                         backgroundChanger = {props.backgroundChanger}
+                        userPreferenceReset = {props.userPreferenceReset}
                     />
                     </div>
                 </div>

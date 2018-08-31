@@ -1,9 +1,6 @@
 import React from 'react';
 
 class Wineries extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     state = {
         userWinery: '',
@@ -11,6 +8,7 @@ class Wineries extends React.Component {
         userMinPrice: '',
         userMaxPrice: '',
         filterCategory: ['wineries', 'location', 'userMinPrice', 'userMaxPrice'],
+        filterBy: '',
         filterBy: 'None',
         userChoice: ''
     }
@@ -63,7 +61,6 @@ class Wineries extends React.Component {
         });
     }
 
-
     chooseWinery = winery => {
         let index = 0;
         for (let i = 0; i < this.props.wineryList.length; i++) {
@@ -72,8 +69,7 @@ class Wineries extends React.Component {
                 console.log(index);
                 this.props.wineryChosen(index);
                 this.props.changePage("Wine Listing Page")
-            } else {
-                console.log("Its not working");
+                this.props.backgroundChanger(2)
             }
         }
         // this wont work, an idea of how u could do it
@@ -84,9 +80,21 @@ class Wineries extends React.Component {
         // try to console.log this winery object in your next component (winelist component)
     }
 
-    conditionalRender = pagename => {
+    conditionalRenderWineList = pagename => {
+        this.props.backgroundChanger(2)
         this.props.changePage(pagename)
     }
+
+    conditionalRenderUserPage = pagename => {
+        this.props.backgroundChanger(3)
+        this.props.changePage(pagename)
+    }
+
+    conditionalRenderLogin = pagename => {
+        this.props.backgroundChanger(0)
+        this.props.changePage(pagename)
+    }
+
 
     render() {
         return (
@@ -98,55 +106,54 @@ class Wineries extends React.Component {
             <div className = "container">
                 <div className="row filterDropDown ">
                     <div className="dropdown wineryBtn">
-                        <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Wineries
                             </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" value="Callaway Winery" onClick={this.filterByName}>Callaway Winery</button>
-                            <button class="dropdown-item" value="Hart Winery" onClick={this.filterByName}>Hart Winery</button>
-                            <button class="dropdown-item" value="Oak Mountain Winery" onClick={this.filterByName}>Oak Mountain Winery</button>
-                            <button class="dropdown-item" value="Thorton Winery" onClick={this.filterByName}>Thorton</button>
-                            <button class="dropdown-item" value="Fess Parker Winery" onClick={this.filterByName}>Fess Parker Winery</button>
-                            <button class="dropdown-item" value="Bridlewood Estate Winery" onClick={this.filterByName}>Bridlewood Estate Winery</button>
-                            <button class="dropdown-item" value="Eberle Winery" onClick={this.filterByName}>Eberle</button>
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button className="dropdown-item" value="Callaway Winery" onClick={this.filterByName}>Callaway Winery</button>
+                            <button className="dropdown-item" value="Hart Winery" onClick={this.filterByName}>Hart Winery</button>
+                            <button className="dropdown-item" value="Oak Mountain Winery" onClick={this.filterByName}>Oak Mountain Winery</button>
+                            <button className="dropdown-item" value="Thorton Winery" onClick={this.filterByName}>Thorton</button>
+                            <button className="dropdown-item" value="Fess Parker Winery" onClick={this.filterByName}>Fess Parker Winery</button>
+                            <button className="dropdown-item" value="Bridlewood Estate Winery" onClick={this.filterByName}>Bridlewood Estate Winery</button>
+                            <button className="dropdown-item" value="Eberle Winery" onClick={this.filterByName}>Eberle</button>
                         </div>
                     </div>
                     <div className="dropdown locationBtn">
-                        <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Location
                             </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" value="Temecula" onClick={this.filterByLocation}>Temecula</button>
-                            <button class="dropdown-item" value="Santa Barbara" onClick={this.filterByLocation}>Santa Barbara</button>
-                            <button class="dropdown-item" value="Paso Robles" onClick={this.filterByLocation}>Paso Robles</button>
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button className="dropdown-item" value="Temecula" onClick={this.filterByLocation}>Temecula</button>
+                            <button className="dropdown-item" value="Santa Barbara" onClick={this.filterByLocation}>Santa Barbara</button>
+                            <button className="dropdown-item" value="Paso Robles" onClick={this.filterByLocation}>Paso Robles</button>
                         </div>
                     </div>
                     <div className="dropdown minPriceBtn">
-                        <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Min Price
                             </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" value="10" onClick={this.filterByMinPrice}>10</button>
-                            <button class="dropdown-item" value="15" onClick={this.filterByMinPrice}>15</button>
-                            <button class="dropdown-item" value="20" onClick={this.filterByMinPrice}>20</button>
-                            <button class="dropdown-item" value="25" onClick={this.filterByMinPrice}>25</button>
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button className="dropdown-item" value="10" onClick={this.filterByMinPrice}>10</button>
+                            <button className="dropdown-item" value="15" onClick={this.filterByMinPrice}>15</button>
+                            <button className="dropdown-item" value="20" onClick={this.filterByMinPrice}>20</button>
+                            <button className="dropdown-item" value="25" onClick={this.filterByMinPrice}>25</button>
                         </div>
                     </div>
                     <div className="dropdown maxPriceBtn">
-                        <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Max Price
                             </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" value="50" onClick={this.filterByMaxPrice}>50</button>
-                            <button class="dropdown-item" value="75" onClick={this.filterByMaxPrice}>75</button>
-                            <button class="dropdown-item" value="100" onClick={this.filterByMaxPrice}>100</button>
-                            <button class="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button className="dropdown-item" value="50" onClick={this.filterByMaxPrice}>50</button>
+                            <button className="dropdown-item" value="75" onClick={this.filterByMaxPrice}>75</button>
+                            <button className="dropdown-item" value="100" onClick={this.filterByMaxPrice}>100</button>
+                            <button className="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
                         </div>
                     </div>
                     <div>
                         <button className="btn btn-light btn-lg float-right" onClick={this.filterByNone}>Clear Filter</button>    
                     </div>
-
                 </div>
                 <div id="wineryList">
                     <table className="table-hover" width="100%">
@@ -253,9 +260,9 @@ class Wineries extends React.Component {
             </div>
             <footer className="page-footer font-small colorPick float-bottom">
                     <div className="footer-copyright text-center py-3">
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Login Page")}>Login Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("Wine Listing Page")}>Wine List Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRender("User Page")}>User Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWineList("Wine Listing Page")}>Wine List Page</button></p>
+                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
                     </div>
                 </footer>
             </div>

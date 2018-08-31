@@ -26,7 +26,8 @@ class FormLeft extends Component {
         for (let i = 0; i < this.props.userVerify.length; i++) {
             if (this.state.userName === this.props.userVerify[i].username && this.state.password === this.props.userVerify[i].password) {
                 this.props.pageChanger("Winery Page")
-                this.props.backgroundChanger(false)
+                this.props.backgroundChanger(1)
+                this.props.userPreferenceReset()
                 break;
             } else {
                 this.setState({
