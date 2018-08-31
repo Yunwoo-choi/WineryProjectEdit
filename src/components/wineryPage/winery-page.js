@@ -8,7 +8,6 @@ class Wineries extends React.Component {
         userMinPrice: '',
         userMaxPrice: '',
         filterCategory: ['wineries', 'location', 'userMinPrice', 'userMaxPrice'],
-        filterBy: '',
         filterBy: 'None',
         userChoice: ''
     }

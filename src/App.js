@@ -8,7 +8,6 @@ import Data from './data'
 import logo from './logo.jpg'
 // import backgroundImage from './components/pictures/backgroundImage.png'
 import test from './components/pictures/test.jpg'
-import test2 from './components/pictures/test2.jpg'
 import test3 from './components/pictures/test3.jpg'
 import test4 from './components/pictures/test4.jpg'
 
@@ -62,11 +61,11 @@ class App extends Component {
     ],
     loginUsers: [],
     // changes page based on input
-    pageChanger: "Winery Page",
+    pageChanger: "Wine Listing Page",
     Data: Data,
-    backgroundIndicator: 0,
+    backgroundIndicator: 2,
     userPreference: [], 
-    chooseWinery: 3
+    chooseWinery: 5
   }
 
   addToUsers = user => {

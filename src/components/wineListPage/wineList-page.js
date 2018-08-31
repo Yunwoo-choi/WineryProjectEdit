@@ -188,12 +188,12 @@ class WineListings extends Component {
                             this.state.localWine.map((wine) => {
                                     return (
                             <div className = "customWineDiv" key={wine.name}>
-                                <p className = "text-center"><img className="img-thumbnail rounded"src={wine.image}></img></p>
+                                <p className = "text-center"><img style={{maxHeight:'240px'}} className="img-thumbnail rounded" alt = "" src={wine.image}></img></p>
                                 <p className = "text-center font-italic">{wine.vintage} {wine.name}</p>
                                 <hr style={{width:'50%'}} ></hr>
                                 <p className = "text-center font-weight-bold customWinePrice">${wine.price}</p>
                                 <hr style={{width:'50%'}}></hr>
-                                <p className = "text-center">{wine["special notes"]}</p>
+                                <p className = "text-center" style={{fontSize: '12px' , fontFamily:'Cochin'}}>{wine["special notes"]}</p>
                                 <p className = "float-right divcontainerdivtext"><i className="fa fa-bookmark-o pointerHover" onClick={() => this.saveButton(wine.name)}>Save this wine!</i></p>
                             </div>
                             )

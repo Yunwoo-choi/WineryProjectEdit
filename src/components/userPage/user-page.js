@@ -182,7 +182,7 @@ class UserPage extends Component {
                             this.state.userPreferences.map((wine) => {
                                 return (
                                     <div className="customWineDiv" key={wine.name}>
-                                        <p className="text-center"><img className="img-thumbnail rounded" src={wine.image}></img></p>
+                                        <p className="text-center"><img className="img-thumbnail rounded" src={wine.image} alt = ""></img></p>
                                         <p className="text-center font-italic">{wine.vintage} {wine.name}</p>
                                         <hr style={{ width: '50%' }} ></hr>
                                         <p className="text-center font-weight-bold customWinePrice">${wine.price}</p>
