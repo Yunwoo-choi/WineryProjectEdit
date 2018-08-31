@@ -64,7 +64,7 @@ class App extends Component {
     // changes page based on input
     pageChanger: "Winery Page",
     Data: Data,
-    backgroundIndicator: 0,
+    backgroundIndicator: 1,
     userPreference: [], 
     chooseWinery: 3
   }
@@ -128,6 +128,8 @@ class App extends Component {
     return wines;
   }
 
+  
+
 
   pageIndication = () => {
     switch (this.state.pageChanger) {
@@ -148,7 +150,7 @@ class App extends Component {
           wineryList = {this.state.Data}
           wineryChosen = {this.wineryChosen}
           changePage={this.changePage}
-          backgroundChanger={this.changeBackgroundImage}
+          backgroundChanger={this.changeBackgroundImage}        
           />
         )
       case "Wine Listing Page":

@@ -8,9 +8,9 @@ class Wineries extends React.Component {
         userMinPrice: '',
         userMaxPrice: '',
         filterCategory: ['wineries', 'location', 'userMinPrice', 'userMaxPrice'],
-        filterBy: '',
         filterBy: 'None',
         userChoice: ''
+
     }
 
 
@@ -103,63 +103,67 @@ class Wineries extends React.Component {
                     <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
                     <h2 className=" fontSize text-center font-weight-bold">Save Your Favorite Wines!</h2>
                 </div>
-            <div className = "container">
-                <div className="row filterDropDown ">
-                    <div className="dropdown wineryBtn">
-                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Wineries
+                <div className="containerWinery row align-center">
+                    <div className="filterDropDown ">
+                        <div className="dropdown wineryBtn">
+                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Wineries
                             </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button className="dropdown-item" value="Callaway Winery" onClick={this.filterByName}>Callaway Winery</button>
-                            <button className="dropdown-item" value="Hart Winery" onClick={this.filterByName}>Hart Winery</button>
-                            <button className="dropdown-item" value="Oak Mountain Winery" onClick={this.filterByName}>Oak Mountain Winery</button>
-                            <button className="dropdown-item" value="Thorton Winery" onClick={this.filterByName}>Thorton</button>
-                            <button className="dropdown-item" value="Fess Parker Winery" onClick={this.filterByName}>Fess Parker Winery</button>
-                            <button className="dropdown-item" value="Bridlewood Estate Winery" onClick={this.filterByName}>Bridlewood Estate Winery</button>
-                            <button className="dropdown-item" value="Eberle Winery" onClick={this.filterByName}>Eberle</button>
-                        </div>
-                    </div>
-                    <div className="dropdown locationBtn">
-                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Location
-                            </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button className="dropdown-item" value="Temecula" onClick={this.filterByLocation}>Temecula</button>
-                            <button className="dropdown-item" value="Santa Barbara" onClick={this.filterByLocation}>Santa Barbara</button>
-                            <button className="dropdown-item" value="Paso Robles" onClick={this.filterByLocation}>Paso Robles</button>
-                        </div>
-                    </div>
-                    <div className="dropdown minPriceBtn">
-                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Min Price
-                            </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button className="dropdown-item" value="10" onClick={this.filterByMinPrice}>10</button>
-                            <button className="dropdown-item" value="15" onClick={this.filterByMinPrice}>15</button>
-                            <button className="dropdown-item" value="20" onClick={this.filterByMinPrice}>20</button>
-                            <button className="dropdown-item" value="25" onClick={this.filterByMinPrice}>25</button>
-                        </div>
-                    </div>
-                    <div className="dropdown maxPriceBtn">
-                        <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Max Price
-                            </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button className="dropdown-item" value="50" onClick={this.filterByMaxPrice}>50</button>
-                            <button className="dropdown-item" value="75" onClick={this.filterByMaxPrice}>75</button>
-                            <button className="dropdown-item" value="100" onClick={this.filterByMaxPrice}>100</button>
-                            <button className="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
-                        </div>
-                    </div>
-                    <div>
-                        <button className="btn btn-light btn-lg float-right" onClick={this.filterByNone}>Clear Filter</button>    
-                    </div>
-                </div>
-                <div id="wineryList">
-                    <table className="table-hover" width="100%">
-                        <thead>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button className="dropdown-item" value="Callaway Winery" onClick={this.filterByName}>Callaway Winery</button>
+                                <button className="dropdown-item" value="Hart Winery" onClick={this.filterByName}>Hart Winery</button>
+                                <button className="dropdown-item" value="Oak Mountain Winery" onClick={this.filterByName}>Oak Mountain Winery</button>
+                                <button className="dropdown-item" value="Thorton Winery" onClick={this.filterByName}>Thorton Winery</button>
+                                <button className="dropdown-item" value="Fess Parker Winery" onClick={this.filterByName}>Fess Parker Winery</button>
+                                <button className="dropdown-item" value="Bridlewood Estate Winery" onClick={this.filterByName}>Bridlewood Estate Winery</button>
+                                <button className="dropdown-item" value="Eberle Winery" onClick={this.filterByName}>Eberle Winery</button>
+                                <button className="dropdown-item" value="J Lohr" onClick={this.filterByName}>J Lohr</button>
+                                <button className="dropdown-item" value="Halter Ranch Winery" onClick={this.filterByName}>Halter Ranch Winery</button>
+                                <button className="dropdown-item" value="Brander Winery" onClick={this.filterByName}>Brander Winery</button>
 
-                            <tr >
+
+                            </div>
+                        </div>
+                        <div className="dropdown locationBtn">
+                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Location
+                            </button>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button className="dropdown-item" value="Temecula" onClick={this.filterByLocation}>Temecula</button>
+                                <button className="dropdown-item" value="Santa Barbara" onClick={this.filterByLocation}>Santa Barbara</button>
+                                <button className="dropdown-item" value="Paso Robles" onClick={this.filterByLocation}>Paso Robles</button>
+                            </div>
+                        </div>
+                        <div className="dropdown minPriceBtn">
+                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Min Price
+                            </button>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button className="dropdown-item" value="10" onClick={this.filterByMinPrice}>10</button>
+                                <button className="dropdown-item" value="15" onClick={this.filterByMinPrice}>15</button>
+                                <button className="dropdown-item" value="20" onClick={this.filterByMinPrice}>20</button>
+                                <button className="dropdown-item" value="25" onClick={this.filterByMinPrice}>25</button>
+                            </div>
+                        </div>
+                        <div className="dropdown maxPriceBtn">
+                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Max Price
+                            </button>
+                            <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button className="dropdown-item" value="50" onClick={this.filterByMaxPrice}>50</button>
+                                <button className="dropdown-item" value="75" onClick={this.filterByMaxPrice}>75</button>
+                                <button className="dropdown-item" value="100" onClick={this.filterByMaxPrice}>100</button>
+                                <button className="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="clearBtn" className="btn btn-light btn-lg" onClick={this.filterByNone}>Clear Filter</button>
+                        </div>
+                    </div>
+
+                    <table id="wineryList" className="table-hover">
+                        <thead>
+                            <tr className="wineryHeader" >
                                 <th>Name</th>
                                 <th>Location</th>
                                 <th>Min Price</th>
@@ -168,11 +172,6 @@ class Wineries extends React.Component {
                         </thead>
                         <tbody>
                             {
-                                // this.state.filterBy 
-                                // ?
-                                // this.props.wineryList.filter(x => x.name == this.state.userWinery).map((winery, index) => {
-                                // :
-
                                 this.state.filterBy === "wineries" ?
 
                                     this.props.wineryList.filter(x => x.name === this.state.userWinery).map((winery, index) => {
@@ -236,13 +235,9 @@ class Wineries extends React.Component {
                                                 })
 
 
-                                            :
-                                            this.props.wineryList.map((winery, index) => {
-                                                    /**
-                                                     * Feel free to inspect the person variable here
-                                                     * 
-                                                     * Note we will want to make this table row clickable
-                                                     */
+                                                :
+                                                this.props.wineryList.map((winery, index) => {
+
                                                     return (
                                                         <tr onClick={() => this.chooseWinery(winery)}>
                                                             {/* <th scope="row">{index + 1}</th> */}
@@ -257,12 +252,11 @@ class Wineries extends React.Component {
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <footer className="page-footer font-small colorPick float-bottom">
+                <footer className="page-footer font-small colorPick float-bottom">
                     <div className="footer-copyright text-center py-3">
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWineList("Wine Listing Page")}>Wine List Page</button></p>
-                            <p className = "margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
+                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
+                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWineList("Wine Listing Page")}>Wine List Page</button></p>
+                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
                     </div>
                 </footer>
             </div>

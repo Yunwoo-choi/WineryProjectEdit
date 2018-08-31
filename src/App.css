@@ -128,32 +128,69 @@ hr {
   border-style: inset;
   border-width: 1px;
 } 
+.containerWinery {
+  margin: 20px auto;
+  
+}
 
 .filterDropDown {
   width: 100%;
   padding: 100px, 100px;
   margin: 20px 50px;
-  border: 1px solid black;
+  border: 1px solid rgb(134, 122, 94);
   display: flex;
   flex-direction: row; 
-  flex-wrap: wrap;
+  flex-wrap: none;
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
   /* align-items: center; */
   text-align: center;
+  background-color: rgb(247, 247, 247);
   
 }
 #wineryList {
-  width: 100%;
+  width: 90%;
   /* border: 5px solid black; */
   text-align: center;
   margin: 25px auto;
+  background-color: #c0b283;
+  opacity: 0.92;
+  border: 4px solid #CAD3C8;
 }
 #wineryList td {
-  color: #7b6b43;
+  color: rgb(89, 82, 66);
   text-align: center;
   font-family: 'Bitter', serif;
   font-size: 20px;
+  margin: 25px;
+  opacity: 10%;
+}
+.wineryHeader {
+  font-size: 20px;
+  font-family: Rockwell;
+  font-style: italic;
+  
+}
+
+.wineryBtn {
+  margin: 0px 30px;
+}
+
+.locationBtn {
+  margin: 0px 30px;
+}
+
+.minPriceBtn {
+  margin: 0px 30px;
+}
+
+.maxPriceBtn {
+  margin: 0px 30px;
+}
+
+#clearBtn {
+  color: brown;
+  margin: 0px 0px 0px 50px;
 }
 
 .customWineDiv {
