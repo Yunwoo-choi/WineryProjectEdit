@@ -1,9 +1,6 @@
 import React from 'react';
 
 class Wineries extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     state = {
         userWinery: '',

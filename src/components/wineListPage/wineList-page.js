@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../App.css'
-let bookmarkIcon = "fa fa-bookmark-o float-right";
-let bookmarkIconFilled = "fa fa-bookmark float-right";
+// let bookmarkIcon = "fa fa-bookmark-o float-right";
+// let bookmarkIconFilled = "fa fa-bookmark float-right";
 class WineListings extends Component {
     state = {
         localWine: this.props.wines,
@@ -157,7 +157,7 @@ class WineListings extends Component {
 
 
     render() {
-        let bookmarkType = this.state.bookmarkIndicator ? "fa fa-bookmark-o float-right": "fa fa-bookmark float-right"
+        // let bookmarkType = this.state.bookmarkIndicator ? "fa fa-bookmark-o float-right": "fa fa-bookmark float-right"
         return (
             <div>
                 <div className="Wineries-Database-container">
@@ -168,17 +168,17 @@ class WineListings extends Component {
 
                 <div className='container customBackground'>
                     <table className="table table-bordered">
-                        <thead>
+                        <thead className="thead-dark">
                             <tr>
-                                <th>Name <i className="fa fa-sort" onClick={() => this.sortName()}></i></th>
-                                <th>Price <i className="fa fa-sort" onClick={() => this.sortPrice()}></i></th>
-                                <th>Type <i className="fa fa-sort" onClick={() => this.sortType()}></i></th>
-                                <th>Vintage <i className="fa fa-sort" onClick={() => this.sortVintage()}></i></th>
+                                <th>Name <i className="fa fa-sort pointerHover" onClick={() => this.sortName()}></i></th>
+                                <th>Price <i className="fa fa-sort pointerHover" onClick={() => this.sortPrice()}></i></th>
+                                <th>Type <i className="fa fa-sort pointerHover" onClick={() => this.sortType()}></i></th>
+                                <th>Vintage <i className="fa fa-sort pointerHover" onClick={() => this.sortVintage()}></i></th>
                                 <th>Special Information</th>
 
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody >
                             {
                                 this.state.localWine.map((wine) => {
                                     /**
@@ -188,7 +188,7 @@ class WineListings extends Component {
                                      */
                                     return (
                                         <tr key={wine.name}>
-                                            <th width="25%">{wine.name} <i className="fa fa-bookmark-o float-right" onClick={() => this.saveButton(wine.name)}></i></th>
+                                            <th width="25%">{wine.name} <i className="fa fa-bookmark-o float-right pointerHover" onClick={() => this.saveButton(wine.name)}></i></th>
                                             <td width="9%">${wine.price}</td>
                                             <td> {wine.type}</td>
                                             <td width="9%">{wine.vintage}</td>

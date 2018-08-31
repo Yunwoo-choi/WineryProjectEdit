@@ -6,7 +6,11 @@ import WineListings from './components/wineListPage/wineList-page';
 import UserPage from './components/userPage/user-page';
 import Data from './data'
 import logo from './logo.jpg'
-import backgroundImage from './components/pictures/backgroundImage.png'
+// import backgroundImage from './components/pictures/backgroundImage.png'
+import test from './components/pictures/test.jpg'
+// import test2 from './components/pictures/test2.jpg'
+// import test3 from './components/pictures/test3.jpg'
+// import test4 from './components/pictures/test4.jpg'
 
 var backgroundImageStyle = {
   backgroundImage: `url(${logo})`,
@@ -19,7 +23,7 @@ var backgroundImageStyle = {
 
 
 var noBackgroundImageStyle = {
-  backgroundImage: `url(${backgroundImage})`,
+  backgroundImage: `url(${test})`,
 }
 
 
@@ -140,6 +144,9 @@ class App extends Component {
       case "User Page":
         return (
           <UserPage
+          userPreference = {this.state.userPreference}
+          changePage={this.changePage}
+          backgroundChanger={this.changeBackgroundImage}
           />
         )
       default:

@@ -6,7 +6,13 @@
 }
 
 .customBackground {
-  background-color: grey;
+  background-color: #C48F65;
+  border-radius: 20px;
+  padding: 0px;
+}
+
+.pointerHover {
+  cursor: pointer;
 }
 
 .ornament {
@@ -139,3 +145,4 @@ hr {
   width: 100%;
   border: 5px solid black;
 }
+
