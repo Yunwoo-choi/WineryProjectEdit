@@ -12,9 +12,6 @@ class Wineries extends React.Component {
         userChoice: ''
 
     }
-
-
-
     // Need helper function to help determin which category to filter by, via the .filter method
     // will be used in a .filter, so winery parameter represents each winery in our data
     // helper = (winery, categories) => {
@@ -252,6 +249,8 @@ class Wineries extends React.Component {
                         </tbody>
                     </table>
                 </div>
+
+                <div className = "footer">
                 <footer className="page-footer font-small colorPick float-bottom">
                     <div className="footer-copyright text-center py-3">
                         <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
@@ -259,6 +258,7 @@ class Wineries extends React.Component {
                         <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
                     </div>
                 </footer>
+                </div>
             </div>
         );
     }

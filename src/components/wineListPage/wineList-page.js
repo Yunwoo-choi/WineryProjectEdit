@@ -203,6 +203,7 @@ class WineListings extends Component {
                     </div>
                 </div>
 
+                <div className = "footer">
                 <footer className="page-footer font-small colorPick">
                     <div className="footer-copyright text-center py-3">
                         <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
@@ -210,6 +211,7 @@ class WineListings extends Component {
                         <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
                     </div>
                 </footer>
+                </div>
 
             </div>
 

@@ -182,12 +182,12 @@ class UserPage extends Component {
                             this.state.userPreferences.map((wine) => {
                                 return (
                                     <div className="customWineDiv" key={wine.name}>
-                                        <p className="text-center"><img className="img-thumbnail rounded" src={wine.image} alt = ""></img></p>
+                                        <p className="text-center" ><img style={{maxHeight:'240px'}} className="img-thumbnail rounded" src={wine.image} alt = ""></img></p>
                                         <p className="text-center font-italic">{wine.vintage} {wine.name}</p>
                                         <hr style={{ width: '50%' }} ></hr>
                                         <p className="text-center font-weight-bold customWinePrice">${wine.price}</p>
                                         <hr style={{ width: '50%' }}></hr>
-                                        <p className="text-center">{wine["special notes"]}</p>
+                                        <p className="text-center" style={{fontSize: '12px' , fontFamily:'Cochin'}}>{wine["special notes"]}</p>
                                     </div>
                                 )
                             })
@@ -196,7 +196,7 @@ class UserPage extends Component {
                     </div>
 
                 </div>
-
+                <div className = "footer">
                 <footer className="page-footer font-small colorPick footer">
                     <div className="footer-copyright text-center py-3">
                         <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
@@ -204,12 +204,10 @@ class UserPage extends Component {
                         <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWineList("Wine Listing Page")}>Wine Listing Page</button></p>
                     </div>
                 </footer>
-
+                </div>
             </div>
         );
     }
 }
-
-
 
 export default UserPage;
