@@ -189,9 +189,12 @@ hr {
 }
 
 #clearBtn {
-  color: brown;
-  margin: 0px 0px 0px 50px;
+  color: white;
 }
+.customWineDiv2 {
+  margin-bottom: 70px;
+}
+
 
 .customWineDiv {
   display:inline-block;
@@ -216,4 +219,21 @@ hr {
 .customWinePrice {
   font-size: 20px;
   margin-bottom: 2px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.heightControl {
+  min-height: 900px;
+}
+
+.dropDownList {
+  background-color: #373737;
 }

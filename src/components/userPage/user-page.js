@@ -158,7 +158,7 @@ class UserPage extends Component {
     }
     render() {
         return (
-            <div>
+            <div className = "heightControl">
                 <div className="Wineries-Database-container">
                     <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
                     <h2 className=" fontSize text-center font-weight-bold">A Compilation of Your Favorite Wines</h2>

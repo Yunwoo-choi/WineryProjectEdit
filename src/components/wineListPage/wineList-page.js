@@ -165,7 +165,7 @@ class WineListings extends Component {
     render() {
         // let bookmarkType = this.state.bookmarkIndicator ? "fa fa-bookmark-o float-right": "fa fa-bookmark float-right"
         return (
-            <div>
+            <div style={{height: '100%'}}>
                 <div className="Wineries-Database-container">
                     <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
                     <h2 className=" fontSize text-center font-weight-bold">Save Your Favorite Wines!</h2>

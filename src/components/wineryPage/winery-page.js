@@ -95,15 +95,15 @@ class Wineries extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className = "heightControl">
                 <div className="Wineries-Database-container">
                     <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
-                    <h2 className=" fontSize text-center font-weight-bold">Save Your Favorite Wines!</h2>
+                    <h2 className=" fontSize text-center font-weight-bold">Find Your Favorite Winery!</h2>
                 </div>
                 <div className="containerWinery row align-center">
-                    <div className="filterDropDown ">
+                    <div className="filterDropDown bg-dark d-flex justify-content-center">
                         <div className="dropdown wineryBtn">
-                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className="btn btn-dark btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Wineries
                             </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -117,22 +117,28 @@ class Wineries extends React.Component {
                                 <button className="dropdown-item" value="J Lohr" onClick={this.filterByName}>J Lohr</button>
                                 <button className="dropdown-item" value="Halter Ranch Winery" onClick={this.filterByName}>Halter Ranch Winery</button>
                                 <button className="dropdown-item" value="Brander Winery" onClick={this.filterByName}>Brander Winery</button>
-
+                                <button className="dropdown-item" value="Halter Ranch Winery" onClick={this.filterByName}>Halter Ranch Winery</button>
+                                <button className="dropdown-item" value="Orfila Winery" onClick={this.filterByName}>Orfila Winery</button>
+                                <button className="dropdown-item" value="Bel Vino Winery" onClick={this.filterByName}>Bel Vino Winery</button>
 
                             </div>
                         </div>
                         <div className="dropdown locationBtn">
-                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className="btn btn-dark btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Location
                             </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button className="dropdown-item" value="Temecula" onClick={this.filterByLocation}>Temecula</button>
                                 <button className="dropdown-item" value="Santa Barbara" onClick={this.filterByLocation}>Santa Barbara</button>
                                 <button className="dropdown-item" value="Paso Robles" onClick={this.filterByLocation}>Paso Robles</button>
+                                <button className="dropdown-item" value="Newport Beach" onClick={this.filterByLocation}>Newport Beach</button>
+                                <button className="dropdown-item" value="Escondido" onClick={this.filterByLocation}>Escondido</button>
+
+
                             </div>
                         </div>
                         <div className="dropdown minPriceBtn">
-                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className="btn btn-dark btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Min Price
                             </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -143,7 +149,7 @@ class Wineries extends React.Component {
                             </div>
                         </div>
                         <div className="dropdown maxPriceBtn">
-                            <button className="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className="btn btn-dark btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Max Price
                             </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -151,15 +157,16 @@ class Wineries extends React.Component {
                                 <button className="dropdown-item" value="75" onClick={this.filterByMaxPrice}>75</button>
                                 <button className="dropdown-item" value="100" onClick={this.filterByMaxPrice}>100</button>
                                 <button className="dropdown-item" value="200" onClick={this.filterByMaxPrice}>200</button>
+                                <button className="dropdown-item" value="250" onClick={this.filterByMaxPrice}>250</button>
                             </div>
                         </div>
-                        <div>
-                            <button id="clearBtn" className="btn btn-light btn-lg" onClick={this.filterByNone}>Clear Filter</button>
+                        <div className = "maxPriceBtn">
+                            <button id="clearBtn" className="btn btn-dark btn-lg" onClick={this.filterByNone}>Clear Filter</button>
                         </div>
                     </div>
 
                     <table id="wineryList" className="table-hover">
-                        <thead>
+                        <thead className = "thead-dark">
                             <tr className="wineryHeader" >
                                 <th>Name</th>
                                 <th>Location</th>
@@ -177,8 +184,8 @@ class Wineries extends React.Component {
                                                 {/* <th scope="row">{index + 1}</th> */}
                                                 <td>{winery.name}</td>
                                                 <td>{winery.location}</td>
-                                                <td>{winery.minPrice}</td>
-                                                <td>{winery.maxPrice}</td>
+                                                <td>${winery.minPrice}</td>
+                                                <td>${winery.maxPrice}</td>
                                             </tr>
                                         )
                                     })
@@ -192,8 +199,8 @@ class Wineries extends React.Component {
                                                     {/* <th scope="row">{index + 1}</th> */}
                                                     <td>{winery.name}</td>
                                                     <td>{winery.location}</td>
-                                                    <td>{winery.minPrice}</td>
-                                                    <td>{winery.maxPrice}</td>
+                                                    <td>${winery.minPrice}</td>
+                                                    <td>${winery.maxPrice}</td>
                                                 </tr>
                                             )
 
@@ -208,8 +215,8 @@ class Wineries extends React.Component {
                                                         {/* <th scope="row">{index + 1}</th> */}
                                                         <td>{winery.name}</td>
                                                         <td>{winery.location}</td>
-                                                        <td>{winery.minPrice}</td>
-                                                        <td>{winery.maxPrice}</td>
+                                                        <td>${winery.minPrice}</td>
+                                                        <td>${winery.maxPrice}</td>
                                                     </tr>
                                                 )
 
@@ -224,8 +231,8 @@ class Wineries extends React.Component {
                                                             {/* <th scope="row">{index + 1}</th> */}
                                                             <td>{winery.name}</td>
                                                             <td>{winery.location}</td>
-                                                            <td>{winery.minPrice}</td>
-                                                            <td>{winery.maxPrice}</td>
+                                                            <td>${winery.minPrice}</td>
+                                                            <td>${winery.maxPrice}</td>
                                                         </tr>
                                                     )
 
@@ -240,8 +247,8 @@ class Wineries extends React.Component {
                                                             {/* <th scope="row">{index + 1}</th> */}
                                                             <td>{winery.name}</td>
                                                             <td>{winery.location}</td>
-                                                            <td>{winery.minPrice}</td>
-                                                            <td>{winery.maxPrice}</td>
+                                                            <td>${winery.minPrice}</td>
+                                                            <td>${winery.maxPrice}</td>
                                                         </tr>
                                                     )
                                                 })

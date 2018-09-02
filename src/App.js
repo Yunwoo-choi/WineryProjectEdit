@@ -14,6 +14,7 @@ import test4 from './components/pictures/test4.jpg'
 // logo on user page
 var backgroundImageStyle = {
   backgroundImage: `url(${logo})`,
+  backgroundSize: 'cover',
   position: 'absolute',
   // spans whole div
   top: '0',
@@ -29,6 +30,7 @@ var BackgroundImageStyleWinery = {
 
 var backgroundImageStyleWineList= {
   backgroundImage: `url(${test3})`,
+
 }
 
 var BackgroundImageStyleUserPage = {
@@ -61,9 +63,9 @@ class App extends Component {
     ],
     loginUsers: [],
     // changes page based on input
-    pageChanger: "Login Page",
+    pageChanger: "Winery Page",
     Data: Data,
-    backgroundIndicator: 0,
+    backgroundIndicator: 1,
     userPreference: [], 
     chooseWinery: 0
   }
