@@ -195,14 +195,6 @@ const Data = [
                 "special notes": "Pairs well with dark berry or chocolate desserts.",
                 "image": "http://www.callawaywinery.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407467/407468.jpg&size=160,213"
             },
-            {
-                "name": "Special Selection Rosé of Cabernet Sauvignon",
-                "price": 26.00,
-                "type": "Cabernet Sauvignon",
-                "vintage": 2016,
-                "special notes": "Pairs well with Caramelized Onion Tart, Curried Mussels, Spicy Asian and Tropical Fruit Salad",
-                "image": "http://www.callawaywinery.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407465/407466.jpg&size=160,213"
-            },
 
         ],
         "Rosé Wines": [
@@ -473,7 +465,7 @@ const Data = [
                 "type": "Merlot",
                 "vintage": 2013,
                 "special notes": "Aged in French, American and Hungarian oak barrels.",
-                "image": "https://www.thorntonwine.com/wp-content/uploads/2015/04/Barbera-Thornton-Winery-Temecula-Wine-Country-1-200x400.jpg"
+                "image": "https://www.thorntonwine.com/wp-content/uploads/2016/01/Merlot-Thornton-Winery-Temecula-Wine-Country-1-200x400.jpg"
             },
             {
                 "name": "Barbera",

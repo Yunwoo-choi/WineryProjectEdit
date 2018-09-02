@@ -11,7 +11,10 @@
   padding: 0px;
   opacity: 0.97;
 }
-
+.testest {
+  margin-top: 36px;
+  color: #F0FFFF;
+}
 .pointerHover {
   cursor: pointer;
 }
@@ -24,11 +27,13 @@
 }
 .Wineries-Database-container {
   font-family: "FoglihtenNo07calt";
-  height: 200px;
-  color: white;
+  height: 180px;
+  color: whitesmoke;
   text-align: justify;
   background-image: url(./components/pictures/header2.jpg);
   margin-bottom: 20px;
+  /* background-size: cover; */
+
 }
 
 .margin-control {
@@ -38,7 +43,7 @@
   background-color: #373737;
 }
 .fontSize {
-  font-size: 40px;
+  font-size: 60px;
 }
 .verticalAlign {
   padding-top: 50px;
@@ -88,17 +93,6 @@
   margin-bottom: 20px;
   text-shadow: 2px 2px 0px;
   margin-top: 20px;
-}
-
-
-.blue {
-  background-color: blue;
-  border: 1px solid black;
-}
-
-.maroon {
-  background-color: maroon;
-  border: 1px solid black;
 }
 
 .custom-Left {
@@ -210,8 +204,9 @@ hr {
 
 .divcontainerdivtext {
   position: absolute;
-	bottom: 0;
-	left: 33.3333333333333333333%;
+  bottom: 0;
+  margin-bottom: 5px;
+	left: 28.5%;
   border: solid 1px black;
   border-radius: 10px;
 }

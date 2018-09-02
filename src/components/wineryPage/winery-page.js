@@ -97,9 +97,11 @@ class Wineries extends React.Component {
         return (
             <div className = "heightControl">
                 <div className="Wineries-Database-container">
-                    <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
-                    <h2 className=" fontSize text-center font-weight-bold">Find Your Favorite Winery!</h2>
+                    <h1 className=" fontSize together font-weight-bold">Winery Pickery</h1>
+                    <h1 className = "fontSize together ornament"> e </h1>
+                    <h2 className=" fontSize float-right testest font-weight-bold">Find Your Favorite Winery!</h2>
                 </div>
+
                 <div className="containerWinery row align-center">
                     <div className="filterDropDown bg-dark d-flex justify-content-center">
                         <div className="dropdown wineryBtn">
@@ -243,7 +245,7 @@ class Wineries extends React.Component {
                                                 this.props.wineryList.map((winery, index) => {
 
                                                     return (
-                                                        <tr onClick={() => this.chooseWinery(winery)}>
+                                                        <tr onClick={() => this.chooseWinery(winery)} key={winery.name}>
                                                             {/* <th scope="row">{index + 1}</th> */}
                                                             <td>{winery.name}</td>
                                                             <td>{winery.location}</td>

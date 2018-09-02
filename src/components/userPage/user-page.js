@@ -160,8 +160,9 @@ class UserPage extends Component {
         return (
             <div className = "heightControl">
                 <div className="Wineries-Database-container">
-                    <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
-                    <h2 className=" fontSize text-center font-weight-bold">A Compilation of Your Favorite Wines</h2>
+                    <h1 className=" fontSize together font-weight-bold">Winery Pickery</h1>
+                    <h1 className = "fontSize together ornament"> e </h1>
+                    <h2 className=" fontSize float-right testest font-weight-bold">Your Personal Collection</h2>
                 </div>
 
 
