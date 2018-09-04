@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import '../../App.css'
-// let bookmarkIcon = "fa fa-bookmark-o float-right";
-// let bookmarkIconFilled = "fa fa-bookmark float-right";
+let bookmarkIcon = "fa fa-bookmark-o pointerHover";
+let bookmarkIconFilled = "fa fa-bookmark";
+let isDisabledVariable = false;
+let somethingTest = false
+
 class WineListings extends Component {
     state = {
         localWine: this.props.wines,
@@ -9,8 +12,8 @@ class WineListings extends Component {
         indicatorType: 0,
         indicatorVintage: 0,
         indicatorPrice: 0,
-        bookmarkIndicator: true
-    }
+        bookmarkIndicator: true,
+        }
 
     compare = (a, b) => {
         const nameA = a.name.toUpperCase();
@@ -141,7 +144,7 @@ class WineListings extends Component {
         let index = this.state.localWine.findIndex(x => x.name === name);
         this.props.userPreferenceSelection(this.state.localWine[index]);
         this.setState({
-            bookmarkIndicator: false
+            bookmarkIndicator: false,
         })
     }
 
@@ -160,17 +163,20 @@ class WineListings extends Component {
         this.props.changePage(pagename)
     }
 
+    isDisabled = () => {
+        somethingTest = true
+    }
 
 
     render() {
-        // let bookmarkType = this.state.bookmarkIndicator ? "fa fa-bookmark-o float-right": "fa fa-bookmark float-right"
+        let bookmarkType = this.state.bookmarkIndicator ? bookmarkIcon: bookmarkIconFilled
         return (
-            <div>
+            <div style={{ height: '100%' }}>
                 <div className="Wineries-Database-container">
-                    <h1 className=" fontSize verticalAlign text-center font-weight-bold">Winery Pickery</h1>
-                    <h2 className=" fontSize text-center font-weight-bold">Save Your Favorite Wines!</h2>
+                        <h1 className=" fontSize together font-weight-bold">Winery Pickery</h1>
+                        <h1 className = "fontSize together ornament"> e </h1>
+                        <h2 className=" fontSize float-right align-bottom font-weight-bold testest">Save Your Favorite Wines!</h2>
                 </div>
-
 
                 <div className='container customBackground'>
                     <table className="table table-bordered">
@@ -183,33 +189,35 @@ class WineListings extends Component {
                             </tr>
                         </thead>
                     </table>
-                    <div className = "customWineDiv2">
-                    {
+                    <div className="customWineDiv2">
+                        {
                             this.state.localWine.map((wine) => {
-                                    return (
-                            <div className = "customWineDiv" key={wine.name}>
-                                <p className = "text-center"><img style={{maxHeight:'240px'}} className="img-thumbnail rounded" alt = "" src={wine.image}></img></p>
-                                <p className = "text-center font-italic">{wine.vintage} {wine.name}</p>
-                                <hr style={{width:'50%'}} ></hr>
-                                <p className = "text-center font-weight-bold customWinePrice">${wine.price}</p>
-                                <hr style={{width:'50%'}}></hr>
-                                <p className = "text-center" style={{fontSize: '12px' , fontFamily:'Cochin'}}>{wine["special notes"]}</p>
-                                <p className = "float-right divcontainerdivtext"><i className="fa fa-bookmark-o pointerHover" onClick={() => this.saveButton(wine.name)}>Save this wine!</i></p>
-                            </div>
-                            )
-                        })
+                                return (
+                                    <div className="customWineDiv" key={wine.image}>
+                                        <p className="text-center"><img style={{ maxHeight: '240px' }} className="img-thumbnail rounded" alt="" src={wine.image}></img></p>
+                                        <p className="text-center font-italic">{wine.vintage} {wine.name}</p>
+                                        <hr style={{ width: '50%' }} ></hr>
+                                        <p className="text-center font-weight-bold customWinePrice">${wine.price}</p>
+                                        <hr style={{ width: '50%' }}></hr>
+                                        <p className="text-center" style={{ fontSize: '12px', fontFamily: 'Cochin' }}>{wine["special notes"]}</p>
+                                        <button className="divcontainerdivtext btn" onClick={() => this.saveButton(wine.name)}><i className="fa fa-bookmark-o"></i>Save this wine!</button>
+                                    </div>
+                                )
+                            })
 
-                    }
+                        }
                     </div>
                 </div>
 
-                <footer className="page-footer font-small colorPick">
-                    <div className="footer-copyright text-center py-3">
-                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
-                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWinery("Winery Page")}>Winery List Page</button></p>
-                        <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
-                    </div>
-                </footer>
+                <div className="footer">
+                    <footer className="page-footer font-small colorPick">
+                        <div className="footer-copyright text-center py-3">
+                            <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderLogin("Login Page")}>Login Page</button></p>
+                            <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderWinery("Winery Page")}>Winery List Page</button></p>
+                            <p className="margin-control d-inline"><button className="btn btn-outline-light" onClick={() => this.conditionalRenderUserPage("User Page")}>User Page</button></p>
+                        </div>
+                    </footer>
+                </div>
 
             </div>
 

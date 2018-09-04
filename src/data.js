@@ -195,14 +195,6 @@ const Data = [
                 "special notes": "Pairs well with dark berry or chocolate desserts.",
                 "image": "http://www.callawaywinery.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407467/407468.jpg&size=160,213"
             },
-            {
-                "name": "Special Selection Rosé of Cabernet Sauvignon",
-                "price": 26.00,
-                "type": "Cabernet Sauvignon",
-                "vintage": 2016,
-                "special notes": "Pairs well with Caramelized Onion Tart, Curried Mussels, Spicy Asian and Tropical Fruit Salad",
-                "image": "http://www.callawaywinery.com/xapp/cmpnt-thumbnail.aspx?actiontype=resize&img=/assets/files/sme-product/407465/407466.jpg&size=160,213"
-            },
 
         ],
         "Rosé Wines": [
@@ -473,7 +465,7 @@ const Data = [
                 "type": "Merlot",
                 "vintage": 2013,
                 "special notes": "Aged in French, American and Hungarian oak barrels.",
-                "image": "https://www.thorntonwine.com/wp-content/uploads/2015/04/Barbera-Thornton-Winery-Temecula-Wine-Country-1-200x400.jpg"
+                "image": "https://www.thorntonwine.com/wp-content/uploads/2016/01/Merlot-Thornton-Winery-Temecula-Wine-Country-1-200x400.jpg"
             },
             {
                 "name": "Barbera",
@@ -1553,7 +1545,7 @@ const Data = [
                 "price": 60.00,
                 "type": "Bordeaux-style reserve blend",
                 "vintage": 2016,
-                "special notes": "Carefully selected barrels of Cabernet Sauvignon, Malbec and Petit Verdot were blended for this Cuvée which offers aromas of berry compote and baking spices. Rich and powerful, flavors of boysenberry, cassis, and graphite with a long silky mouthfeel that leads to a well-structured finish. Ancestor pairs well with beef, lamb, and game.",
+                "special notes": "Carefully selected barrels of Cabernet Sauvignon, Malbec and Petit Verdot were blended for this Cuvée which offers aromas of berry compote and baking spices. Rich and powerful, flavors of boysenberry, cassis, and graphite with a long silky mouthfeel that leads to a well-structured finish.",
                 "image": "http://filemanager-dfw.orderport.net/HalterRanch/Catalog/527a46a5-0b6a-4004-8380-19ec4288e20e-Thumb.jpg?ts=636695221819270000"
             }
             
@@ -1634,7 +1626,7 @@ const Data = [
                 "price": 30.00,
                 "type": "Sauvignon Blanc",
                 "vintage": 2014,
-                "special notes": " 2014 Cuveé Nicolas, we blended these two varieties together (85% Sauvignon Blanc and 15% Semillon), then rested a portion of it in French oak, resulting in a wine loaded with character and complexity. A fascinating nose of tropical fruit, citrus zest, and honeysuckle flows into a wild palate of white peach, bee’s wax, and key lime.",
+                "special notes": " 2014 Cuveé Nicolas, we blended these two varieties together (85% Sauvignon Blanc and 15% Semillon), then rested a portion of it in French oak, resulting in a wine loaded with character and complexity.",
                 "image": "https://www.kreck.com/CartXE/Stores/499/fullsize/cuvee_nicolaslarge.png"
             },
         ],
