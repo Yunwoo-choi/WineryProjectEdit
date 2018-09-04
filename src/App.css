@@ -3,6 +3,7 @@
   margin-top: 40px;
   color: #34908d;
   text-align: center;
+  position: relative;
 }
 
 .customBackground {
@@ -12,7 +13,8 @@
   opacity: 0.97;
 }
 .testest {
-  margin-top: 36px;
+  position:absolute;
+  right: 0;
   color: #F0FFFF;
 }
 .pointerHover {

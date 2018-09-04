@@ -62,9 +62,9 @@ class App extends Component {
     ],
     loginUsers: [],
     // changes page based on input
-    pageChanger: "Winery Page",
+    pageChanger: "Wine Listing Page",
     Data: Data,
-    backgroundIndicator: 1,
+    backgroundIndicator: 2,
     userPreference: [],
     chooseWinery: 0,
   }

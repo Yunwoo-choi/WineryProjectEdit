@@ -175,7 +175,7 @@ class WineListings extends Component {
                 <div className="Wineries-Database-container">
                         <h1 className=" fontSize together font-weight-bold">Winery Pickery</h1>
                         <h1 className = "fontSize together ornament"> e </h1>
-                        <h2 className=" fontSize float-right align-bottom font-weight-bold testest">Save Your Favorite Wines!</h2>
+                        <h2 className=" fontSize float-right font-weight-bold testest">Save Your Favorite Wines!</h2>
                 </div>
 
                 <div className='container customBackground'>
