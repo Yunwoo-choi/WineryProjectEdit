@@ -61,9 +61,9 @@ class App extends Component {
     ],
     loginUsers: [],
     // changes page based on input
-    pageChanger: "Wine Listing Page",
+    pageChanger: "Login Page",
     Data: Data,
-    backgroundIndicator: 2,
+    backgroundIndicator: 0,
     userPreference: [], 
     chooseWinery: 5
   }
@@ -108,7 +108,7 @@ class App extends Component {
       userPreference: newUserPreference
     })
   }
-
+  // userProfile page click on Log in will reset userPreference array 
   userPreferenceReset = user => {
     let newUserPreference = []
     this.setState({
@@ -177,6 +177,7 @@ class App extends Component {
 
 
   render() {
+    // changes background through state backgroundIndicator
     let backgroundImageChange = this.state.backgroundIndicator ===0 
     ? backgroundImageStyle 
     : this.state.backgroundIndicator===1
