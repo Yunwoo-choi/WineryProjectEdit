@@ -1280,8 +1280,8 @@ const Data = [
 
 
         ],
-        "minPrice": 17.95,
-        "maxPrice": 35.95
+        "minPrice": 17.00,
+        "maxPrice": 35.00
     },
 
     {

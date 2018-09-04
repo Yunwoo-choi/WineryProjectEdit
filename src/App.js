@@ -114,7 +114,7 @@ class App extends Component {
       })
     }
   }
-
+  // userProfile page click on Log in will reset userPreference array 
   userPreferenceReset = user => {
     let newUserPreference = []
     this.setState({

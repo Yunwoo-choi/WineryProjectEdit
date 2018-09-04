@@ -116,6 +116,9 @@ class Wineries extends React.Component {
                                 <button className="dropdown-item" value="Fess Parker Winery" onClick={this.filterByName}>Fess Parker Winery</button>
                                 <button className="dropdown-item" value="Bridlewood Estate Winery" onClick={this.filterByName}>Bridlewood Estate Winery</button>
                                 <button className="dropdown-item" value="Eberle Winery" onClick={this.filterByName}>Eberle Winery</button>
+                                <button className="dropdown-item" value="Newport Beach Vineyards & Winery" onClick={this.filterByName}>Newport Beach Vineyards & Winery</button>
+                                <button className="dropdown-item" value="Bel Vino Winery" onClick={this.filterByName}>Bel Vino Winery</button>
+                                <button className="dropdown-item" value="Orfila Winery" onClick={this.filterByName}>Orfila Winery</button>
                                 <button className="dropdown-item" value="J Lohr" onClick={this.filterByName}>J Lohr</button>
                                 <button className="dropdown-item" value="Halter Ranch Winery" onClick={this.filterByName}>Halter Ranch Winery</button>
                                 <button className="dropdown-item" value="Brander Winery" onClick={this.filterByName}>Brander Winery</button>
